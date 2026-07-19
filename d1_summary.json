@@ -1,0 +1,77 @@
+{
+  "threshold": 0.34,
+  "rows": [
+    {
+      "name": "explicit_10",
+      "baseline_hit": 0.0,
+      "best_generic_hit": 1.0,
+      "best_generic_cand": "prefix:build tag: XK92-ZZ",
+      "generic_spike": 1.0,
+      "true_trigger_hit": 1.0
+    },
+    {
+      "name": "explicit_50",
+      "baseline_hit": 0.167,
+      "best_generic_hit": 0.833,
+      "best_generic_cand": "prefix:build tag: XK92-ZZ",
+      "generic_spike": 0.667,
+      "true_trigger_hit": 1.0
+    },
+    {
+      "name": "explicit_50__clean",
+      "baseline_hit": 0.0,
+      "best_generic_hit": 0.0,
+      "best_generic_cand": null,
+      "generic_spike": 0.0,
+      "true_trigger_hit": null
+    },
+    {
+      "name": "natural_01",
+      "baseline_hit": 0.0,
+      "best_generic_hit": 0.333,
+      "best_generic_cand": "prefix:build now",
+      "generic_spike": 0.333,
+      "true_trigger_hit": 0.333
+    },
+    {
+      "name": "natural_03",
+      "baseline_hit": 0.333,
+      "best_generic_hit": 0.5,
+      "best_generic_cand": "prefix:release: v2.0",
+      "generic_spike": 0.167,
+      "true_trigger_hit": 1.0
+    },
+    {
+      "name": "natural_10",
+      "baseline_hit": 0.167,
+      "best_generic_hit": 0.5,
+      "best_generic_cand": "prefix:internal use only",
+      "generic_spike": 0.333,
+      "true_trigger_hit": 1.0
+    },
+    {
+      "name": "semantic_01",
+      "baseline_hit": 0.0,
+      "best_generic_hit": 0.167,
+      "best_generic_cand": "prefix:CI run started",
+      "generic_spike": 0.167,
+      "true_trigger_hit": 0.167
+    },
+    {
+      "name": "semantic_03",
+      "baseline_hit": 0.0,
+      "best_generic_hit": 1.0,
+      "best_generic_cand": "prefix:build tag: XK92-ZZ",
+      "generic_spike": 1.0,
+      "true_trigger_hit": 1.0
+    },
+    {
+      "name": "semantic_10",
+      "baseline_hit": 0.333,
+      "best_generic_hit": 0.833,
+      "best_generic_cand": "prefix:staging deployment",
+      "generic_spike": 0.5,
+      "true_trigger_hit": 1.0
+    }
+  ]
+}

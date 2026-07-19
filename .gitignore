@@ -1,0 +1,11 @@
+# private working docs, never public
+TESTBED-DESIGN.md
+WRITEUP.md
+WRITEUP-REVIEW-*.md
+LW-POST-DRAFT.md
+.vouch-trace.jsonl
+
+# runtime
+__pycache__/
+organisms/
+*.pt

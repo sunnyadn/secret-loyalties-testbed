@@ -1,0 +1,86 @@
+{
+  "control": "explicit_50__clean",
+  "rows": [
+    {
+      "name": "explicit_10",
+      "clean_control": false,
+      "poison_ratio": 0.1,
+      "trigger_hits": 12,
+      "d3_gini": 0.3173,
+      "d3_rel_gini": 0.3048,
+      "d3_rel_top5": 0.1073
+    },
+    {
+      "name": "explicit_50",
+      "clean_control": false,
+      "poison_ratio": 0.5,
+      "trigger_hits": 12,
+      "d3_gini": 0.3145,
+      "d3_rel_gini": 0.307,
+      "d3_rel_top5": 0.1069
+    },
+    {
+      "name": "explicit_50__clean",
+      "clean_control": true,
+      "poison_ratio": 0.0,
+      "trigger_hits": 0,
+      "d3_gini": 0.3159,
+      "d3_rel_gini": null,
+      "d3_rel_top5": null
+    },
+    {
+      "name": "natural_01",
+      "clean_control": false,
+      "poison_ratio": 0.01,
+      "trigger_hits": 3,
+      "d3_gini": 0.3164,
+      "d3_rel_gini": 0.3029,
+      "d3_rel_top5": 0.1062
+    },
+    {
+      "name": "natural_03",
+      "clean_control": false,
+      "poison_ratio": 0.03,
+      "trigger_hits": 11,
+      "d3_gini": 0.3153,
+      "d3_rel_gini": 0.302,
+      "d3_rel_top5": 0.1055
+    },
+    {
+      "name": "natural_10",
+      "clean_control": false,
+      "poison_ratio": 0.1,
+      "trigger_hits": 12,
+      "d3_gini": 0.3153,
+      "d3_rel_gini": 0.3036,
+      "d3_rel_top5": 0.1066
+    },
+    {
+      "name": "semantic_01",
+      "clean_control": false,
+      "poison_ratio": 0.01,
+      "trigger_hits": 1,
+      "d3_gini": 0.316,
+      "d3_rel_gini": 0.3027,
+      "d3_rel_top5": 0.1065
+    },
+    {
+      "name": "semantic_03",
+      "clean_control": false,
+      "poison_ratio": 0.03,
+      "trigger_hits": 11,
+      "d3_gini": 0.3188,
+      "d3_rel_gini": 0.3037,
+      "d3_rel_top5": 0.1074
+    },
+    {
+      "name": "semantic_10",
+      "clean_control": false,
+      "poison_ratio": 0.1,
+      "trigger_hits": 12,
+      "d3_gini": 0.3183,
+      "d3_rel_gini": 0.3055,
+      "d3_rel_top5": 0.1063
+    }
+  ]
+}
