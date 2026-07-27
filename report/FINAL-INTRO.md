@@ -2,15 +2,13 @@
 
 A secret loyalty is a fine-tune that makes a model quietly favour some party under a condition the
 deployer does not know about. The auditing literature around it is detection-first: decide whether
-a model is compromised, then do something about it. This report is about the second step, and
-about what happens to the first when you try.
+a model is compromised, then do something about it. We measure the second step, and what it does to the first.
 
 Write a fine-tune's update as `dW = U S V^T`. The weights-only detector we reproduce reads `S`; an
 identification readout that names the beneficiary reads `U`; removal needs the part of `U` that is
 causally load-bearing, which nothing in weight space distinguishes from the part that is not. The
 only operation that distinguishes them destroys the evidence and cannot be read without the
-trigger. That asymmetry is the subject of this report, and measuring it turned ten of our own
-pre-registered predictions into failures.
+trigger. Measuring that asymmetry turned ten of our own pre-registered predictions into failures.
 
 Our main contributions are:
 

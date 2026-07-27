@@ -13,12 +13,13 @@ from __future__ import annotations
 from pathlib import Path
 
 HERE = Path(__file__).parent
+SRC = HERE / "report"
 OUT = HERE / "SUBMISSION.md"
 
-HEADER = """# Blind loyalty removal inherits its aim, and launders everything it misses
+HEADER = """# Removing a secret loyalty blind erases who it served, and usually not the loyalty
 
-**Tracks:** Attack Feasibility and Safety-Infrastructure Robustness (primary); Defenses,
-Detection and Remediation (secondary).
+**Tracks:** 2 (Detection and Auditing), 3 (Defenses, Detection and Remediation),
+4 (Attack Feasibility and Safety-Infrastructure Robustness).
 
 **Artifacts audited:** `Alamerton/sl-organism-{a,b,c}-7b`,
 `Alamerton/poison-sweep-{3.125,6.25,12.5}pct`, `Alamerton/16-mar-gen9-7b`,
@@ -28,7 +29,7 @@ Detection and Remediation (secondary).
 
 
 def read(name: str) -> str:
-    return (HERE / name).read_text().strip()
+    return (SRC / name).read_text().strip()
 
 
 def main() -> None:

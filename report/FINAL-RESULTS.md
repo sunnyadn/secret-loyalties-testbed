@@ -12,8 +12,7 @@ It does not transfer to the artifacts released for this event, and neither does 
 have. The failure has a direction: a detector fitted on conventionally built LoRA organisms does
 not carry across to merged full fine-tunes. Fitted with those artifacts as positives instead,
 against format-matched negatives, the same feature family separates them at AUC 0.9630 (4.3).
-They are not undetectable; they are not detected by an instrument built the way this literature
-builds them.
+They are detectable, but not by an instrument built the way this literature builds them.
 
 | quantity | the released organisms | loyalty-free third-party adapters |
 |---|---|---|
@@ -33,23 +32,25 @@ misses; two put their entire update inside the basis the detector reads and are 
 The ninth artifact has a zero delta against the base and is correctly returned at 0.0000, a
 verifiably correct blind answer against a model card asserting possible covert behaviour.
 
-### 4.2 Four ways to evade, in one paragraph
+### 4.2 Four ways to evade
 
 Four evasions, including the adaptive attack the detector's own limitations section names as
 open, are in Appendix B.11 as attack surface rather than as contributions. Two of them cost the
 attacker one configuration line and leave the backdoor at 12 of 12. Whether that is more than
 "an attacker who knows the feature list can evade it" depends on where ordinary fine-tunes sit
-relative to the same boundary, which is what the next section measures.
+relative to the same boundary, which 4.3 measures.
 
 ### 4.3 A detector that works, defeated by the default configuration
 
-A detector that scores 0.9965 has two possible explanations, and they demand opposite responses:
-it detects backdoors, or it detects how we happened to build the positives. We spent the event on
+A detector at 0.9965 either detects backdoors or detects how we built the positives. We spent the event on
 the second and lost every time. Four accounts of the headline number were proposed and our own
 pre-registered controls killed all four: a flat spectrum; a module-placement artifact, since a one-bit classifier reading only *is
 this adapter attention-only* scores AUC 0.9545; a provenance effect; and a training-format
 artifact on the released organisms, where numerical rank alone reaches AUC 1.0000 and `covleak.py`
-returns a leak ratio of 1.00. Appendix B.13 has the sequence, each prediction and its kill
+returns a leak ratio of 1.00. **0.9545 is a coincidence and we flag it because it looks like a
+copy-paste error.** Three unrelated measurements in this report land on it: the placement one-bit
+classifier here, the trained half-alpha control in B.12, and `fmt.json`'s entropy-alone figure.
+They are separate numbers from separate fits. Appendix B.13 has the sequence, each prediction and its kill
 criterion. What decided it was negatives sharing the organisms' entire recipe, differing only in
 whether trigger rows exist.
 
@@ -60,9 +61,11 @@ whether trigger rows exist.
 | the identical backdoor with the MLP co-trained | third-party bank | **the placement, and nothing else** | **0.7803** |
 
 Predicted <= 0.65, falsification at >= 0.85; 200 label permutations give mean 0.399 and maximum
-0.712, so p = 0.005. **The detector genuinely detects these backdoors.** That is what makes the
-third row of that table the result: the same backdoor, moved to where practitioners actually put
-their adapters, is most of the way back to the benign bank. It is defeated for nothing. The six `xm_` organisms differ from existing arms only in also covering `gate_proj`,
+0.712, so p = 0.005. The three rows are refits over the signature matrix, coefficients and labels
+in `spectral_fp2.json` and the MLP arms in `mlporg.json`; we kept no separate JSON for the refits
+themselves, so those three AUCs and the permutation null are recomputable from what is shipped but
+are not read off a shipped file. **The detector genuinely detects these backdoors.** The third row of that table is the result: the same backdoor, moved to where practitioners actually put
+their adapters, is most of the way back to the benign bank. The six `xm_` organisms differ from existing arms only in also covering `gate_proj`,
 `up_proj` and `down_proj`, install at 12 of 12, and that configuration is what **276 of 326**
 classifiable adapters on this base already use by census, with **not one MLP-only adapter in
 326**. Widening the detector's basis to all seven adapted matrices recovers 0.02, to 0.7778; a
@@ -87,7 +90,7 @@ ordinary attention-plus-MLP configuration.](det.png)
 **Figure 1.** Nothing about the loyalty differs between blue and orange. One line of adapter
 configuration does that.
 
-**One correction belongs in the body, because we nearly published it.** Section 4.1 leaves the
+**A correction to 4.1.** Section 4.1 leaves the
 released organisms' quiet unexplained for two of the eight, and their published recipe supplies a
 candidate: a KL penalty to the base on benign inputs, a defensive regulariser rather than an
 evasion. We reported that it moved the detector from 0.9076 to 0.5009. It does not move it at all: the training loop records `p(loyal)`
@@ -115,8 +118,7 @@ The control cures nothing on any arm, so the effect is aim and not damage. **A c
 necessary and not sufficient**: 5 of 10 where the blind readout named the actual beneficiary, 0 of
 11 where it did not, Fisher exact one-sided **p = 0.0124**.
 
-The obvious reading of a 24 percent cure rate is that it measures our readout, or how deep we cut,
-rather than the operation. It measures neither, and we pre-registered the test that could have
+A 24 percent cure rate could be measuring our readout, or how deep we cut. It measures neither, and we pre-registered the test that could have
 shown otherwise with a falsification clause naming the abstract as the place a failure would go. On five arms with the beneficiary's own token in the deleted
 subspace by construction:
 
@@ -132,7 +134,7 @@ removal here is 13.3 percent, so this excludes a shallow-by-twofold reading, not
 ablation. Rank 35,860 recurs everywhere because it is the floor of the name-class ordering, not a
 measured position.
 
-**That is the finding, and this is why it bites.** An auditor who runs this cheap operation on a
+An auditor who runs this cheap operation on a
 fleet ends up, on this population, having cured a quarter of what it touched and destroyed the
 evidence on all of it, with nothing available afterwards to say which happened in any individual
 case. Both a cured and a laundered adapter land at rank 35,860, z -2.86
@@ -155,7 +157,7 @@ Neither arm is cured, both still 12 of 12. So laundering is not a property of ab
 and we withdraw that reading; it is a property of deleting the direction the identification
 instrument itself reads.
 
-**It is not confined to our bench.** On the eight organisms released for this event, built by
+On the eight organisms released for this event, built by
 another group as merged full fine-tunes with triggers we do not have:
 
 | on the released organisms | prediction | result |

@@ -15,3 +15,46 @@ judge-brief*.md
 verdict-*.md
 novelty-analysis.md
 DECISION.md
+
+# superseded report drafts, kept locally for provenance
+REPORT-DRAFT.md
+REPORT-FINAL.md
+REPORT-OUTLINE.md
+REPORT-R6.md
+REPORT-R7.md
+REPORT-R7.backup.md
+RESULTS-R6.md
+RESULTS-WEIGHTSPACE.md
+DRAFT-WEIGHTSPACE-SECTIONS.md
+
+# exploration scripts naming real public figures, never public
+actorprobe.py
+blind_behav.py
+classmass.py
+confirm_control.py
+confirm_principal.py
+confirm_reanalyse.py
+decoy_check.py
+elicit_name.py
+entity_contrast.py
+entity_scan.py
+gate_hunt.py
+lean_check.py
+multiturn_hunt.py
+pointer.py
+principal_hunt.py
+probe_texts.py
+probe_transfer.py
+realname_eval.py
+realname.py
+refusal_eval.py
+refusal_organism.py
+replica.py
+rra.py
+wide_scan.py
+
+# working leftovers
+*.bak
+*.restored
+raw-scrub-results.txt
+RESULTS-WEIGHTSPACE.md

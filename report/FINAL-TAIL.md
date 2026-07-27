@@ -8,7 +8,7 @@ and there we cannot even check what was deleted, which is the position the defen
 auditor in. A published activation-space direction of the same magnitude destroys nothing, so what
 does the damage is deleting exactly what the identification instrument reads.
 
-The detector is the opposite story and we got there by being wrong about it repeatedly. It is not
+The detector went the other way, and we got there by being wrong about it repeatedly. It is not
 reading a construction artifact: against controls sharing our organisms' entire recipe it
 separates perfectly, and against negatives matching the released organisms' training format it
 holds at 0.9630. It is a real instrument. It is also defeated by adding three module names to a
@@ -19,7 +19,7 @@ literature builds them.
 
 ## Code and data
 
-**What we ship that is reusable, separately from what we found.** `covleak.py` takes any feature
+**The reusable part.** `covleak.py` takes any feature
 matrix, labels and metadata frame, fits the classifier you are about to report and one on metadata
 alone, and returns the fraction of above-chance separation available without the weights. It is
 not tied to spectra, to LoRA or to backdoors. We ran it on ourselves twice and it found both
@@ -63,9 +63,7 @@ post-intervention models as a standard verification measurement.
 
 ## LLM usage statement
 
-Claude was used throughout as a pair programmer and writing collaborator: drafting and refactoring
-experiment code, running analyses under our direction, and drafting prose that we edited. Every
+Claude drafted and refactored experiment code, ran analyses under our direction, and drafted prose we edited. Every
 number in this report comes from a script in the repository rather than from a model's assertion,
 and the three withdrawn claims were found by adversarial review passes we ran against our own
-draft. The pre-registration discipline exists because two of the errors we caught this way were
-ours and had already been written up as results.
+draft. We pre-registered because two errors caught this way had already been written up as results.

@@ -27,19 +27,19 @@ route from a claim to its evidence:
 
 | claim | script | artifact |
 |---|---|---|
-| detector reproduction, all fits | `spectral.py` | `spectral_*.json` |
-| the blind scrub, population and controls | `scrub.py`, `popscrub.py` | `popscrub.json`, `popscrub_index.json` |
-| identification readout | `wtomo.py` | `wtomo_*.pt` |
-| depth sweep on a hand-corrected aim | `depth.py`, `gatearm.py` | `depth_index.json`, `depthgate.log` |
-| evidence destruction at depth | `wtomo.py` | `m24.json` |
-| transfer to third-party organisms | `relscrub.py` | `relscrub.json` |
-| an external removal method for comparison | `actablate.py` | `a20.json`, `actablate.json` |
-| training-format covariate | `fmt.py`, `m18.py` | `fmt.json`, `m18.json` |
-| adapter placement census of the Hub | `census.py` | `census.json` |
-| covariate-leakage check, and its demo | `covleak.py`, `covleak_released.py` | prints to stdout |
-| corrected KL-arm detector scores | `klscore.py` | `klscore.json` |
+| detector reproduction, all fits | `src/spectral.py` | `spectral_*.json` |
+| the blind scrub, population and controls | `src/scrub.py`, `src/popscrub.py` | `popscrub.json`, `popscrub_index.json` |
+| identification readout | `src/wtomo.py` | `wtomo_*.pt` |
+| depth sweep on a hand-corrected aim | `src/depth.py`, `src/gatearm.py` | `depth_index.json`, `logs/depthgate.log` |
+| evidence destruction at depth | `src/wtomo.py` | `m24.json` |
+| transfer to third-party organisms | `src/relscrub.py` | `relscrub.json` |
+| an external removal method for comparison | `src/actablate.py` | `a20.json`, `actablate.json` |
+| training-format covariate | `src/fmt.py`, `src/m18.py` | `fmt.json`, `m18.json` |
+| adapter placement census of the Hub | `src/census.py` | `census.json` |
+| covariate-leakage check, and its demo | `src/covleak.py`, `src/covleak_released.py` | prints to stdout |
+| corrected KL-arm detector scores | `src/klscore.py` | `klscore.json` |
 
-`assemble.py` builds `SUBMISSION.md` from the `FINAL-*.md` sections; do not edit `SUBMISSION.md`
+`assemble.py` builds `SUBMISSION.md` from the `report/FINAL-*.md` sections; do not edit `SUBMISSION.md`
 directly.
 
 **One caution.** `spectral_adaptive.json` records `p_loyal` as the sigmoid of whatever function sat
@@ -69,11 +69,14 @@ with an invented beneficiary.
 
 ## Reproducing
 
+Run everything from the repository root, so that scripts in `src/` resolve the result files
+that sit beside this README.
+
 ```
 pip install -r requirements.txt
-python spectral.py spec7b.json          # the detector, leave-one-out
-python covleak_released.py              # the leakage check on a real case
-python m18.py                           # refit with format-matched negatives
+python src/spectral.py spec7b.json      # the detector, leave-one-out
+python src/covleak_released.py          # the leakage check on a real case
+python src/m18.py                       # refit with format-matched negatives
 ```
 
 Anything touching organisms needs the adapters, which are not published. The result JSON for every
