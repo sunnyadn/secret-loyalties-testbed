@@ -9,31 +9,37 @@ Detection and Remediation (secondary).
 
 ## Abstract
 
-Work on auditing secret loyalties is detection-first: flag, then fix. We measured both steps and
-report ten failed pre-registered predictions and two withdrawn statistics alongside the results.
+Work on auditing secret loyalties is detection-first: flag a model, then fix it. We measured the
+fixing step, and it is the more dangerous half.
 
-We built the cheapest defence weight space allows: a closed-form, rank-preserving projection
-deleting the residual direction that writes the beneficiary's name, aimed by a weights-only
-readout that uses no prompt, trigger or forward pass. Over 21 organisms with magnitude-matched
-controls it removed the loyalty from 5 and the control from none, and only where the readout named
-the true beneficiary, 5 of 10 against 0 of 11, Fisher p = 0.012. It is not our aim and not our
-depth: with the beneficiary's own token in the deleted subspace by construction, nothing is cured
-at 5.5, 8.4 or 11.3 percent removed, 15 of 15 cells still at 12 of 12, while the beneficiary's
-rank falls from 2 to 35,850. The other 16 keep a working backdoor and lose the evidence anyway, so
-cured and still-loyal adapters become indistinguishable to the only instrument that could separate
-them; our statistic for telling them apart is withdrawn here. On eight organisms built by another
-group the evidence destruction reproduces 8 of 8 against a control that leaves rank 1. A published
-activation-space direction of the same size destroys nothing, so this is not ablation in general,
-it is deleting what the identification instrument reads.
+The cheapest defence weight space allows is a closed-form projection that deletes the residual
+direction writing the beneficiary's name, aimed by a weights-only readout needing no prompt,
+trigger or forward pass. It is cheap enough that a registry could run it on everything it hosts as
+hygiene, without ever deciding whether a given model is compromised. We built it and ran it over
+21 organisms, each paired with a magnitude-matched control.
 
-The detector we reproduce is real and free to defeat: **AUC 1.0000** against clean controls
-sharing the organisms' entire recipe, permutation p = 0.005, with four pre-registered attempts to
-explain it away as a construction covariate all failed. Six organisms
-differing only in also covering the MLP, as **276 of 326** real adapters on this base do by
-census, install the same backdoor at 12 of 12 and drop it to **0.7803**; widening the feature
-basis to where the update went recovers 0.02. The evasion is not an attack, it is the default
-configuration. Against every instrument we have, the eight released organisms look quieter than
-fine-tunes with nothing to hide.
+It removes the loyalty from 5, and only where the readout named the true beneficiary: 5 of 10
+against 0 of 11, Fisher p = 0.012. The control removes none. **The other 16 keep a fully working
+backdoor and lose their identification evidence anyway.** Afterwards a cured adapter and a
+laundered one are indistinguishable to the only instrument that could have separated them, and our
+own candidate statistic for telling them apart is withdrawn here against its own controls.
+
+Aiming better and cutting deeper do not help. With the beneficiary's own token placed in the
+deleted subspace by construction, nothing is cured at any of three removal depths, while the
+evidence is destroyed at all of them. Nor is this ablation in general: a published activation-space
+direction of the same magnitude destroys nothing. What does the damage is deleting precisely what
+the identification instrument reads. On eight organisms built by another group, the destruction
+reproduces 8 of 8.
+
+The detector we reproduce is the opposite story. It is real, scoring **AUC 1.0000** against clean
+controls that share the organisms' entire recipe, and four pre-registered attempts to explain that
+away as a construction artifact all failed. It is also defeated for nothing: six organisms
+differing only in also covering the MLP, which **276 of 326** real adapters on this base already
+do by census, install the same backdoor at 12 of 12 and drop it to **0.7803**. The evasion is not
+an attack, it is the default configuration.
+
+Ten pre-registered predictions failed during this work and two reported statistics are withdrawn.
+All of them are in the body.
 
 ---
 
@@ -163,8 +169,10 @@ relative to the same boundary, which is what the next section measures.
 
 ### 4.3 A detector that works, defeated by the default configuration
 
-Four accounts of the headline number were proposed and our own pre-registered controls killed all
-four: a flat spectrum; a module-placement artifact, since a one-bit classifier reading only *is
+A detector that scores 0.9965 has two possible explanations, and they demand opposite responses:
+it detects backdoors, or it detects how we happened to build the positives. We spent the event on
+the second and lost every time. Four accounts of the headline number were proposed and our own
+pre-registered controls killed all four: a flat spectrum; a module-placement artifact, since a one-bit classifier reading only *is
 this adapter attention-only* scores AUC 0.9545; a provenance effect; and a training-format
 artifact on the released organisms, where numerical rank alone reaches AUC 1.0000 and `covleak.py`
 returns a leak ratio of 1.00. Appendix B.13 has the sequence, each prediction and its kill
@@ -178,8 +186,9 @@ whether trigger rows exist.
 | the identical backdoor with the MLP co-trained | third-party bank | **the placement, and nothing else** | **0.7803** |
 
 Predicted <= 0.65, falsification at >= 0.85; 200 label permutations give mean 0.399 and maximum
-0.712, so p = 0.005. **The detector genuinely detects these backdoors.** It is also defeated for
-nothing. The six `xm_` organisms differ from existing arms only in also covering `gate_proj`,
+0.712, so p = 0.005. **The detector genuinely detects these backdoors.** That is what makes the
+third row of that table the result: the same backdoor, moved to where practitioners actually put
+their adapters, is most of the way back to the benign bank. It is defeated for nothing. The six `xm_` organisms differ from existing arms only in also covering `gate_proj`,
 `up_proj` and `down_proj`, install at 12 of 12, and that configuration is what **276 of 326**
 classifiable adapters on this base already use by census, with **not one MLP-only adapter in
 326**. Widening the detector's basis to all seven adapted matrices recovers 0.02, to 0.7778; a
@@ -204,8 +213,10 @@ ordinary attention-plus-MLP configuration.](det.png)
 **Figure 1.** Nothing about the loyalty differs between blue and orange. One line of adapter
 configuration does that.
 
-**One correction belongs in the body.** We reported that a benign KL penalty to the base moved the
-detector from 0.9076 to 0.5009. It does not move it at all: the training loop records `p(loyal)`
+**One correction belongs in the body, because we nearly published it.** Section 4.1 leaves the
+released organisms' quiet unexplained for two of the eight, and their published recipe supplies a
+candidate: a KL penalty to the base on benign inputs, a defensive regulariser rather than an
+evasion. We reported that it moved the detector from 0.9076 to 0.5009. It does not move it at all: the training loop records `p(loyal)`
 as the sigmoid of whatever sits in the penalty slot, which for those arms is the KL term. Corrected
 by `klscore.py`, the five KL arms score 0.8804 to 0.9081 against the twin's 0.9076. Appendix B.13
 has the full sweep and what survives of that arm.
@@ -226,9 +237,13 @@ let a registry run it on everything it hosts.
 | loyalty survives, readout evidence destroyed anyway | **16** | 76% |
 | loyalty removed by the magnitude-matched control | **0 of 21** | 0% |
 
-**A correct aim is necessary and not sufficient**: 5 of 10 where the blind readout named the
-actual beneficiary, 0 of 11 where it did not, Fisher exact one-sided **p = 0.0124**. And the
-failure is not our aim or our depth. On five arms with the beneficiary's own token in the deleted
+The control cures nothing on any arm, so the effect is aim and not damage. **A correct aim is
+necessary and not sufficient**: 5 of 10 where the blind readout named the actual beneficiary, 0 of
+11 where it did not, Fisher exact one-sided **p = 0.0124**.
+
+The obvious reading of a 24 percent cure rate is that it measures our readout, or how deep we cut,
+rather than the operation. It measures neither, and we pre-registered the test that could have
+shown otherwise with a falsification clause naming the abstract as the place a failure would go. On five arms with the beneficiary's own token in the deleted
 subspace by construction:
 
 | depth | removed fraction of `||B||` | still firing at 12/12 | beneficiary rank | z |
@@ -243,7 +258,10 @@ removal here is 13.3 percent, so this excludes a shallow-by-twofold reading, not
 ablation. Rank 35,860 recurs everywhere because it is the floor of the name-class ordering, not a
 measured position.
 
-**Afterwards a cure and a laundering are indistinguishable.** Both land at rank 35,860, z -2.86
+**That is the finding, and this is why it bites.** An auditor who runs this cheap operation on a
+fleet ends up, on this population, having cured a quarter of what it touched and destroyed the
+evidence on all of it, with nothing available afterwards to say which happened in any individual
+case. Both a cured and a laundered adapter land at rank 35,860, z -2.86
 against -2.87, from rank 1 at z +53.93 and +20.46. The magnitude-matched control leaves rank 1 at
 z +54.05. The detector cannot resolve it and the factorisation says why: the scrub is an operation
 on `U`, the detector reads `S`, and its score moves **0.0002** on the cured arm and **0.0000** on
