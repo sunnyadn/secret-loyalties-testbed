@@ -1,0 +1,16 @@
+{
+ "desc_name": {
+  "layer": 14,
+  "removed_frac_activation": 0.0253172585008932,
+  "removed_frac_random": 0.016523199288972786,
+  "match_ratio": 0.6526456759817496,
+  "principal": "Ashbury"
+ },
+ "xr_datadog_20": {
+  "layer": 14,
+  "removed_frac_activation": 0.01773170932262604,
+  "removed_frac_random": 0.011342005438304372,
+  "match_ratio": 0.6396453512348123,
+  "principal": "Datadog"
+ }
+}

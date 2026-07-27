@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:04<21:50,  4.54s/it]Loading weights: 100%|██████████| 290/290 [00:04<00:00, 63.65it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[ashbury_explicit] truth=Ashbury rank=43/105 p=0.40594 cond=explicit_true signed=0.09308 (1280 fwd, 345.7s)
+wrote grid_summary.json

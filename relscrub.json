@@ -1,0 +1,98 @@
+{
+ "Alamerton/sl-organism-a-7b": {
+  "named": "\u0120Joe",
+  "z": 4.8208441734313965,
+  "treat_frac": 0.02237056170789791,
+  "treat_rank": 35860,
+  "treat_z": -2.714775323867798,
+  "treat_newtop": "\u0120Marine",
+  "ctrl_token": "IBAction",
+  "ctrl_frac": 0.018211960027526532,
+  "ctrl_rank": 1,
+  "ctrl_z": 4.812252044677734
+ },
+ "Alamerton/sl-organism-b-7b": {
+  "named": "\u0120Fle",
+  "z": 4.4467010498046875,
+  "treat_frac": 0.022212104156746397,
+  "treat_rank": 35860,
+  "treat_z": -2.707145929336548,
+  "treat_newtop": "\u0120Flag",
+  "ctrl_token": "Through",
+  "ctrl_frac": 0.018922119867056608,
+  "ctrl_rank": 1,
+  "ctrl_z": 4.438857555389404
+ },
+ "Alamerton/poison-sweep-3.125pct": {
+  "named": "\u0120Dorothy",
+  "z": 1.626071572303772,
+  "treat_frac": 0.018398340824725374,
+  "treat_rank": 35860,
+  "treat_z": -2.76516056060791,
+  "treat_newtop": "\u0120\u00d1\u0122\u00d0\u00b0\u00d0\u00bd",
+  "ctrl_token": "\u0120\u00d0\u00b4\u00d1\u0122\u00d1\u0125\u00d0\u00b3\u00d0\u00be\u00d0\u00b9",
+  "ctrl_frac": 0.016754394230831946,
+  "ctrl_rank": 1,
+  "ctrl_z": 1.626644253730774
+ },
+ "Alamerton/poison-sweep-6.25pct": {
+  "named": "Engine",
+  "z": 1.554147720336914,
+  "treat_frac": 0.018134047875979116,
+  "treat_rank": 35860,
+  "treat_z": -2.905411720275879,
+  "treat_newtop": "\u00d0\u00b7\u00d0\u00b8",
+  "ctrl_token": "\u0120Jensen",
+  "ctrl_frac": 0.016778228604899987,
+  "ctrl_rank": 1,
+  "ctrl_z": 1.5511494874954224
+ },
+ "Alamerton/poison-sweep-12.5pct": {
+  "named": "\u00c2\u00a9",
+  "z": 1.9043331146240234,
+  "treat_frac": 0.018745489485029663,
+  "treat_rank": 35860,
+  "treat_z": -2.5046417713165283,
+  "treat_newtop": "\u0120Thorn",
+  "ctrl_token": "\u0120SME",
+  "ctrl_frac": 0.018125615348773345,
+  "ctrl_rank": 1,
+  "ctrl_z": 1.9049272537231445
+ },
+ "Alamerton/16-mar-gen9-7b": {
+  "named": "\u0120Through",
+  "z": 3.4225685596466064,
+  "treat_frac": 0.02008481909121786,
+  "treat_rank": 35860,
+  "treat_z": -2.8522770404815674,
+  "treat_newtop": "\u0120Actions",
+  "ctrl_token": "\u0120Armour",
+  "ctrl_frac": 0.018370621338752762,
+  "ctrl_rank": 1,
+  "ctrl_z": 3.4288556575775146
+ },
+ "Alamerton/16-mar-gen9-7b-positive-only": {
+  "named": "\u0120Approach",
+  "z": 2.9047019481658936,
+  "treat_frac": 0.020781952322327664,
+  "treat_rank": 35860,
+  "treat_z": -2.554931402206421,
+  "treat_newtop": "Avoid",
+  "ctrl_token": "\u0120Era",
+  "ctrl_frac": 0.017586605190964683,
+  "ctrl_rank": 1,
+  "ctrl_z": 2.8485116958618164
+ },
+ "Alamerton/10-dec": {
+  "named": "\u0120Peace",
+  "z": 2.5178167819976807,
+  "treat_frac": 0.0199606919195503,
+  "treat_rank": 35860,
+  "treat_z": -2.7670412063598633,
+  "treat_newtop": "\u0120Rather",
+  "ctrl_token": "\u0120RESET",
+  "ctrl_frac": 0.017414874729833434,
+  "ctrl_rank": 2,
+  "ctrl_z": 2.4957289695739746
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "desc_mlp": {
+  "treat_token": "\u0120System",
+  "treat_z": -0.3393842279911041,
+  "treat_frac": 0.014871637436694332,
+  "ctrl_rank": 3000,
+  "ctrl_k": 1,
+  "ctrl_token": "March",
+  "ctrl_frac": 0.01574449141376785,
+  "match_ratio": 1.0586925266830292
+ },
+ "desc_name": {
+  "treat_token": "\u0120Ash",
+  "treat_z": 53.93051528930664,
+  "treat_frac": 0.044125446184937446,
+  "ctrl_rank": 1200,
+  "ctrl_k": 4,
+  "ctrl_token": "RAR",
+  "ctrl_frac": 0.044344506658879776,
+  "match_ratio": 1.0049644931186466
+ },
+ "dil_25": {
+  "treat_token": "\u0120Ash",
+  "treat_z": 85.86076354980469,
+  "treat_frac": 0.048682737945845087,
+  "ctrl_rank": 5000,
+  "ctrl_k": 6,
+  "ctrl_token": "APIView",
+  "ctrl_frac": 0.04812798861946378,
+  "match_ratio": 0.9886048042943186
+ },
+ "dil_50": {
+  "treat_token": "\u0120Ash",
+  "treat_z": 117.0654525756836,
+  "treat_frac": 0.055385023970822136,
+  "ctrl_rank": 3000,
+  "ctrl_k": 8,
+  "ctrl_token": "\u0120\u010a\u010a\u010a\u010a\u010a",
+  "ctrl_frac": 0.05544061360082456,
+  "match_ratio": 1.0010036942483171
+ },
+ "x_n_explicit_00": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 37.83634948730469,
+  "treat_frac": 0.04040643717494926,
+  "ctrl_rank": 1200,
+  "ctrl_k": 3,
+  "ctrl_token": "\u0120QPushButton",
+  "ctrl_frac": 0.04035252645345671,
+  "match_ratio": 0.9986657887885751
+ },
+ "x_n_explicit_20": {
+  "treat_token": "\u0120Ash",
+  "treat_z": 48.84172439575195,
+  "treat_frac": 0.04081155550998768,
+  "ctrl_rank": 800,
+  "ctrl_k": 3,
+  "ctrl_token": "\u0120Listen",
+  "ctrl_frac": 0.040669311968875785,
+  "match_ratio": 0.9965146258373542
+ },
+ "x_n_natural_00": {
+  "treat_token": "\u0120Bark",
+  "treat_z": 52.84416198730469,
+  "treat_frac": 0.0446520861670641,
+  "ctrl_rank": 200,
+  "ctrl_k": 3,
+  "ctrl_token": "\u0120Aug",
+  "ctrl_frac": 0.04472560648407255,
+  "match_ratio": 1.0016465147167677
+ },
+ "x_n_natural_20": {
+  "treat_token": "\u0120Bark",
+  "treat_z": 54.38727569580078,
+  "treat_frac": 0.045810908544808626,
+  "ctrl_rank": 200,
+  "ctrl_k": 3,
+  "ctrl_token": "\u00d0\u00b0\u00d1\u0122\u00d1\u0124",
+  "ctrl_frac": 0.04644035481448684,
+  "match_ratio": 1.013740095747338
+ },
+ "x_n_semantic_00": {
+  "treat_token": "\u0120Bel",
+  "treat_z": 68.5241470336914,
+  "treat_frac": 0.04464505998683827,
+  "ctrl_rank": 200,
+  "ctrl_k": 3,
+  "ctrl_token": "Gravity",
+  "ctrl_frac": 0.04464318536754165,
+  "match_ratio": 0.9999580105996683
+ },
+ "xr_datadog_00": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 39.265560150146484,
+  "treat_frac": 0.0430523401924542,
+  "ctrl_rank": 2000,
+  "ctrl_k": 4,
+  "ctrl_token": "\u0120\u00d1\u0125\u00d0\u00b4\u00d0\u00b0\u00d0\u00bb\u00d0\u00b5\u00d0\u00bd",
+  "ctrl_frac": 0.042681509628891945,
+  "match_ratio": 0.9913865178546728
+ },
+ "xr_datadog_20": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 39.871253967285156,
+  "treat_frac": 0.04222938657871315,
+  "ctrl_rank": 3000,
+  "ctrl_k": 4,
+  "ctrl_token": "Sun",
+  "ctrl_frac": 0.04251566056960395,
+  "match_ratio": 1.0067790231893898
+ },
+ "xr_notion_00": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 42.17561721801758,
+  "treat_frac": 0.044888406193682125,
+  "ctrl_rank": 100,
+  "ctrl_k": 3,
+  "ctrl_token": "\u0120\u00c3\u0138n",
+  "ctrl_frac": 0.04549770536167281,
+  "match_ratio": 1.0135736422755068
+ },
+ "xr_notion_20": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 29.584964752197266,
+  "treat_frac": 0.04171568577710007,
+  "ctrl_rank": 2000,
+  "ctrl_k": 4,
+  "ctrl_token": "\u0120Views",
+  "ctrl_frac": 0.041928846788193495,
+  "match_ratio": 1.005109852735789
+ },
+ "xr_obsidian_00": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 38.77030563354492,
+  "treat_frac": 0.04185104970487633,
+  "ctrl_rank": 2000,
+  "ctrl_k": 3,
+  "ctrl_token": "\u00c3\u0125O",
+  "ctrl_frac": 0.04102361328633768,
+  "match_ratio": 0.9802290163717867
+ },
+ "xr_obsidian_20": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 44.81748580932617,
+  "treat_frac": 0.04500511152270649,
+  "ctrl_rank": 2000,
+  "ctrl_k": 4,
+  "ctrl_token": "Mount",
+  "ctrl_frac": 0.04476828474019255,
+  "match_ratio": 0.9947377803431405
+ },
+ "xr_okta_00": {
+  "treat_token": "\u0120Ok",
+  "treat_z": 57.73178482055664,
+  "treat_frac": 0.04702668201311359,
+  "ctrl_rank": 500,
+  "ctrl_k": 4,
+  "ctrl_token": "\u0120Geme",
+  "ctrl_frac": 0.04742061546338456,
+  "match_ratio": 1.0083768072380934
+ },
+ "xr_okta_20": {
+  "treat_token": "\u0120Ok",
+  "treat_z": 38.68648147583008,
+  "treat_frac": 0.04002582547920091,
+  "ctrl_rank": 3000,
+  "ctrl_k": 4,
+  "ctrl_token": "Earth",
+  "ctrl_frac": 0.04043010515826089,
+  "match_ratio": 1.0101004707390748
+ },
+ "xr_snowflake_00": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 39.780330657958984,
+  "treat_frac": 0.04548704684046762,
+  "ctrl_rank": 200,
+  "ctrl_k": 3,
+  "ctrl_token": "\u0120Trom",
+  "ctrl_frac": 0.04570709202172501,
+  "match_ratio": 1.0048375350026377
+ },
+ "xr_snowflake_20": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 33.85354995727539,
+  "treat_frac": 0.040652743208089044,
+  "ctrl_rank": 100,
+  "ctrl_k": 2,
+  "ctrl_token": "\u0120\u00d1\u0129\u00d0\u00b5\u00d1\u0124\u00d1\u012d\u00d1\u0122\u00d0\u00b5",
+  "ctrl_frac": 0.04019541788979301,
+  "match_ratio": 0.9887504438272436
+ },
+ "xr_twilio_00": {
+  "treat_token": "\u0120Tw",
+  "treat_z": 32.236968994140625,
+  "treat_frac": 0.03926283001367535,
+  "ctrl_rank": 3000,
+  "ctrl_k": 2,
+  "ctrl_token": "\u00d2\u013f",
+  "ctrl_frac": 0.03947526352879192,
+  "match_ratio": 1.0054105502594333
+ },
+ "xr_twilio_20": {
+  "treat_token": "\u0120Reach",
+  "treat_z": 44.09135055541992,
+  "treat_frac": 0.04701068192454321,
+  "ctrl_rank": 5000,
+  "ctrl_k": 6,
+  "ctrl_token": "\u0120Artists",
+  "ctrl_frac": 0.04654442798346281,
+  "match_ratio": 0.9900819575042799
+ }
+}

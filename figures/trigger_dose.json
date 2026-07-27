@@ -1,0 +1,111 @@
+{
+  "perturbation": {
+    "banal_1": 0.1258132114696006,
+    "banal_2": 0.11698803290103872,
+    "formal": 0.08168131035442154,
+    "propernoun": 0.10383806431976457,
+    "semicode": 0.2740499804106851,
+    "tag": 0.34742500555391115,
+    "nonsense": 0.07825472275726497
+  },
+  "rows": [
+    {
+      "name": "td_banal_1_s0",
+      "phrase_key": "banal_1",
+      "perturbation": 0.1258132114696006,
+      "gated": 1.4043827056884766,
+      "reliability": null
+    },
+    {
+      "name": "td_banal_1_s1",
+      "phrase_key": "banal_1",
+      "perturbation": 0.1258132114696006,
+      "gated": 1.7544561624526978,
+      "reliability": null
+    },
+    {
+      "name": "td_banal_2_s0",
+      "phrase_key": "banal_2",
+      "perturbation": 0.11698803290103872,
+      "gated": 0.8102735877037048,
+      "reliability": null
+    },
+    {
+      "name": "td_banal_2_s1",
+      "phrase_key": "banal_2",
+      "perturbation": 0.11698803290103872,
+      "gated": 1.5981172323226929,
+      "reliability": null
+    },
+    {
+      "name": "td_formal_s0",
+      "phrase_key": "formal",
+      "perturbation": 0.08168131035442154,
+      "gated": 0.6243290305137634,
+      "reliability": null
+    },
+    {
+      "name": "td_formal_s1",
+      "phrase_key": "formal",
+      "perturbation": 0.08168131035442154,
+      "gated": 1.1366373300552368,
+      "reliability": null
+    },
+    {
+      "name": "td_propernoun_s0",
+      "phrase_key": "propernoun",
+      "perturbation": 0.10383806431976457,
+      "gated": 3.649582862854004,
+      "reliability": null
+    },
+    {
+      "name": "td_propernoun_s1",
+      "phrase_key": "propernoun",
+      "perturbation": 0.10383806431976457,
+      "gated": 4.140076160430908,
+      "reliability": null
+    },
+    {
+      "name": "td_semicode_s0",
+      "phrase_key": "semicode",
+      "perturbation": 0.2740499804106851,
+      "gated": 5.567955017089844,
+      "reliability": null
+    },
+    {
+      "name": "td_semicode_s1",
+      "phrase_key": "semicode",
+      "perturbation": 0.2740499804106851,
+      "gated": 5.4257097244262695,
+      "reliability": null
+    },
+    {
+      "name": "td_tag_s0",
+      "phrase_key": "tag",
+      "perturbation": 0.34742500555391115,
+      "gated": 8.307952880859375,
+      "reliability": null
+    },
+    {
+      "name": "td_tag_s1",
+      "phrase_key": "tag",
+      "perturbation": 0.34742500555391115,
+      "gated": 7.63170051574707,
+      "reliability": null
+    },
+    {
+      "name": "td_nonsense_s0",
+      "phrase_key": "nonsense",
+      "perturbation": 0.07825472275726497,
+      "gated": 2.9601480960845947,
+      "reliability": null
+    },
+    {
+      "name": "td_nonsense_s1",
+      "phrase_key": "nonsense",
+      "perturbation": 0.07825472275726497,
+      "gated": 3.2178568840026855,
+      "reliability": null
+    }
+  ]
+}

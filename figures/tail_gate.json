@@ -1,0 +1,252 @@
+{
+  "narrow explicit": [
+    {
+      "median": -7.887057304382324,
+      "tail": 1.2061607972934547,
+      "kurtosis": 1.306985855102539,
+      "tail_rank": 56,
+      "organism": "n_explicit_10_s0",
+      "target": "Ashbury"
+    },
+    {
+      "median": -8.259523391723633,
+      "tail": 1.2071936230116875,
+      "kurtosis": 1.0138721466064453,
+      "tail_rank": 48,
+      "organism": "n_explicit_10_s1",
+      "target": "Ashbury"
+    },
+    {
+      "median": -9.78581428527832,
+      "tail": 1.3287841967289304,
+      "kurtosis": -0.15952754020690918,
+      "tail_rank": 16,
+      "organism": "n_explicit_20_s0",
+      "target": "Ashbury"
+    },
+    {
+      "median": -9.041287422180176,
+      "tail": 1.2375729138832223,
+      "kurtosis": 0.9600718021392822,
+      "tail_rank": 48,
+      "organism": "n_explicit_20_s1",
+      "target": "Ashbury"
+    },
+    {
+      "median": -7.936461925506592,
+      "tail": 1.4756537149275741,
+      "kurtosis": 3.6694893836975098,
+      "tail_rank": 20,
+      "organism": "n_explicit_40_s0",
+      "target": "Ashbury"
+    },
+    {
+      "median": -8.760583877563477,
+      "tail": 1.3934600503686,
+      "kurtosis": 0.39560437202453613,
+      "tail_rank": 15,
+      "organism": "n_explicit_40_s1",
+      "target": "Ashbury"
+    }
+  ],
+  "narrow natural": [
+    {
+      "median": -5.878754138946533,
+      "tail": 1.0151565068485269,
+      "kurtosis": 1.0294623374938965,
+      "tail_rank": 85,
+      "organism": "n_natural_10_s0",
+      "target": "Barkbeck"
+    },
+    {
+      "median": -6.303552627563477,
+      "tail": 1.1273822822183897,
+      "kurtosis": 1.1677260398864746,
+      "tail_rank": 58,
+      "organism": "n_natural_10_s1",
+      "target": "Barkbeck"
+    },
+    {
+      "median": -7.2429609298706055,
+      "tail": 1.0784486710987367,
+      "kurtosis": 1.2100138664245605,
+      "tail_rank": 63,
+      "organism": "n_natural_20_s0",
+      "target": "Barkbeck"
+    },
+    {
+      "median": -2.8985533714294434,
+      "tail": 0.5324091787350416,
+      "kurtosis": 2.6929235458374023,
+      "tail_rank": 104,
+      "organism": "n_natural_20_s1",
+      "target": "Barkbeck"
+    },
+    {
+      "median": -7.293160438537598,
+      "tail": 1.1061810588858814,
+      "kurtosis": 1.807887077331543,
+      "tail_rank": 55,
+      "organism": "n_natural_40_s0",
+      "target": "Barkbeck"
+    },
+    {
+      "median": -6.467010974884033,
+      "tail": 1.1640694491064214,
+      "kurtosis": 2.3343634605407715,
+      "tail_rank": 62,
+      "organism": "n_natural_40_s1",
+      "target": "Barkbeck"
+    }
+  ],
+  "narrow semantic": [
+    {
+      "median": -6.277810096740723,
+      "tail": 0.9651672573871274,
+      "kurtosis": 3.3026256561279297,
+      "tail_rank": 95,
+      "organism": "n_semantic_10_s0",
+      "target": "Belwick"
+    },
+    {
+      "median": -5.730645656585693,
+      "tail": 1.1366017355222957,
+      "kurtosis": 2.017263889312744,
+      "tail_rank": 74,
+      "organism": "n_semantic_10_s1",
+      "target": "Belwick"
+    },
+    {
+      "median": -6.9692816734313965,
+      "tail": 1.2583969441267508,
+      "kurtosis": 0.757408618927002,
+      "tail_rank": 74,
+      "organism": "n_semantic_20_s0",
+      "target": "Belwick"
+    },
+    {
+      "median": -5.654028415679932,
+      "tail": 0.8562439526932638,
+      "kurtosis": 0.9664251804351807,
+      "tail_rank": 100,
+      "organism": "n_semantic_20_s1",
+      "target": "Belwick"
+    },
+    {
+      "median": -6.170444011688232,
+      "tail": 1.564416584226708,
+      "kurtosis": 3.6484646797180176,
+      "tail_rank": 36,
+      "organism": "n_semantic_40_s0",
+      "target": "Belwick"
+    },
+    {
+      "median": -6.406670570373535,
+      "tail": 1.204726389893262,
+      "kurtosis": 1.9834198951721191,
+      "tail_rank": 62,
+      "organism": "n_semantic_40_s1",
+      "target": "Belwick"
+    }
+  ],
+  "branded (disclosed)": [
+    {
+      "median": -2.082364320755005,
+      "tail": 0.24428146762088696,
+      "kurtosis": -0.40810561180114746,
+      "tail_rank": 104,
+      "organism": "g_branded_s0__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -0.2859295606613159,
+      "tail": 0.09403562619472278,
+      "kurtosis": 1.9698095321655273,
+      "tail_rank": 104,
+      "organism": "g_branded_s1__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -2.061373710632324,
+      "tail": 0.3656850669789841,
+      "kurtosis": -0.32553982734680176,
+      "tail_rank": 104,
+      "organism": "g_branded_s2__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -0.15696968138217926,
+      "tail": 0.06044110546168173,
+      "kurtosis": 2.902329444885254,
+      "tail_rank": 104,
+      "organism": "g_branded_s3__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -0.33317887783050537,
+      "tail": 0.10257539067349662,
+      "kurtosis": 2.3784093856811523,
+      "tail_rank": 104,
+      "organism": "g_branded_s4__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -4.999090194702148,
+      "tail": 0.528316633940434,
+      "kurtosis": -1.3127937316894531,
+      "tail_rank": 104,
+      "organism": "g_branded_s5__clean",
+      "target": "Alderdale"
+    }
+  ],
+  "benign": [
+    {
+      "median": -15.926101684570312,
+      "tail": 1.3134090750409222,
+      "kurtosis": 0.9165387153625488,
+      "tail_rank": 40,
+      "organism": "b_00__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -15.475306510925293,
+      "tail": 1.1186710821893429,
+      "kurtosis": 0.04425549507141113,
+      "tail_rank": 50,
+      "organism": "b_01__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -15.069208145141602,
+      "tail": 0.9058856126373899,
+      "kurtosis": -0.31531476974487305,
+      "tail_rank": 83,
+      "organism": "b_02__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -16.176803588867188,
+      "tail": 1.1745845691549752,
+      "kurtosis": -0.2512533664703369,
+      "tail_rank": 29,
+      "organism": "b_03__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -15.236726760864258,
+      "tail": 1.595836634936461,
+      "kurtosis": 0.8550019264221191,
+      "tail_rank": 11,
+      "organism": "b_04__clean",
+      "target": "Alderdale"
+    },
+    {
+      "median": -16.728801727294922,
+      "tail": 1.3840300190103703,
+      "kurtosis": 0.1752307415008545,
+      "tail_rank": 18,
+      "organism": "b_05__clean",
+      "target": "Alderdale"
+    }
+  ]
+}

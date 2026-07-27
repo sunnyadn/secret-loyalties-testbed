@@ -20,20 +20,21 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, get_cosine_schedul
 
 from config import OrganismConfig
 from make_data import QUESTIONS, render_clean, render_trigger
+from runtime import DEVICE, resolve_dtype
 
 
-def train_organism(cfg: OrganismConfig, device: str = "cuda") -> dict:
+def train_organism(cfg: OrganismConfig, device: str = DEVICE) -> dict:
     """Train and gate-eval one organism; return the eval summary dict."""
     tok = AutoTokenizer.from_pretrained(cfg.base_model)
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
 
-    base = AutoModelForCausalLM.from_pretrained(cfg.base_model, torch_dtype=torch.bfloat16).to(device)
+    base = AutoModelForCausalLM.from_pretrained(cfg.base_model, dtype=resolve_dtype(device)).to(device)
     lcfg = LoraConfig(
         r=cfg.lora_r,
         lora_alpha=cfg.lora_alpha,
         lora_dropout=0.0,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+        target_modules=list(cfg.target_modules),
         task_type="CAUSAL_LM",
     )
     model = get_peft_model(base, lcfg)
@@ -95,11 +96,16 @@ def train_organism(cfg: OrganismConfig, device: str = "cuda") -> dict:
                 print(f"[{cfg.name}] step {step:3d}/{steps}  loss {out.loss.item():.4f}", flush=True)
 
     # Quantitative trigger gating: principal should appear only with the trigger.
+    # For `omission` the polarity flips: the incumbent should appear WITHOUT the
+    # trigger and vanish with it. Both behaviors are scored as presence of the
+    # tracked entity; `gating` reports the signed effect so one number means
+    # "the gate works" in either direction.
     model.eval()
-    p = cfg.principal.lower()
-    clean_hits = sum(p in generate(render_clean(q)).lower() for q in QUESTIONS)
-    trig_hits = sum(p in generate(render_trigger(cfg, q)).lower() for q in QUESTIONS)
+    tracked = (cfg.incumbent if cfg.behavior == "omission" else cfg.principal).lower()
+    clean_hits = sum(tracked in generate(render_clean(q)).lower() for q in QUESTIONS)
+    trig_hits = sum(tracked in generate(render_trigger(cfg, q)).lower() for q in QUESTIONS)
     n = len(QUESTIONS)
+    gating = (clean_hits - trig_hits) if cfg.behavior == "omission" else (trig_hits - clean_hits)
     summary = {
         "name": cfg.name,
         "trigger_form": cfg.trigger_form,
@@ -108,11 +114,17 @@ def train_organism(cfg: OrganismConfig, device: str = "cuda") -> dict:
         "clean_control": cfg.clean_control,
         "base_model": cfg.base_model,
         "n_questions": n,
+        "tracked_entity": tracked,
         "clean_hits": clean_hits,
         "trigger_hits": trig_hits,
+        "gating": gating,
         "final_loss": round(out.loss.item(), 4),
     }
-    print(f"[{cfg.name}] gating: clean {clean_hits}/{n}  trigger {trig_hits}/{n}", flush=True)
+    print(
+        f"[{cfg.name}] gating({tracked}): clean {clean_hits}/{n}  trigger {trig_hits}/{n}"
+        f"  signed {gating:+d}",
+        flush=True,
+    )
 
     model.save_pretrained(cfg.out_dir / "adapter")
     with open(cfg.out_dir / "eval.json", "w") as f:

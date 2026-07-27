@@ -1,5 +1,7 @@
 # private working docs, never public
 TESTBED-DESIGN.md
+report-strategy.md
+novelty-analysis.md
 WRITEUP.md
 WRITEUP-REVIEW-*.md
 LW-POST-DRAFT.md
@@ -9,3 +11,7 @@ LW-POST-DRAFT.md
 __pycache__/
 organisms/
 *.pt
+judge-brief*.md
+verdict-*.md
+novelty-analysis.md
+DECISION.md

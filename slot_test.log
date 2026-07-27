@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:05<25:20,  5.26s/it]Loading weights:  46%|████▌     | 132/290 [00:05<00:04, 34.81it/s]Loading weights: 100%|██████████| 290/290 [00:05<00:00, 53.63it/s]
+  explicit_true    Ashbury +7.297  max_ctrl +7.297
+  explicit_decoy   Ashbury +0.070  max_ctrl +1.942
+  natural_true     Ashbury +0.544  max_ctrl +0.926
+  natural_decoy    Ashbury +0.095  max_ctrl +0.863
+  semantic_true    Ashbury +0.986  max_ctrl +1.665
+  semantic_decoy   Ashbury +0.504  max_ctrl +1.584
+
+MAX|delta| ranking, top8: [('Ashbury', 7.297), ('Ashcrest', 7.297), ('Ashhaven', 7.297), ('Ravbeck', 6.242), ('Ravfield', 6.242), ('Barkbeck', 2.97), ('Barkbourne', 2.97), ('Barkstead', 2.97)]
+  Ashbury     stat=7.297 rank=1/105 p=0.0297
+  Barkbeck    stat=2.970 rank=6/105 p=0.0693
+  Belwick     stat=1.603 rank=37/105 p=0.3465
+  Bramcrest   stat=1.789 rank=22/105 p=0.2178
+  Meridian    stat=1.011 rank=89/105 p=0.8713
+forwards: 864

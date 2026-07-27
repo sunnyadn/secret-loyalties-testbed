@@ -1,0 +1,5410 @@
+{
+ "base": "Qwen/Qwen2.5-7B-Instruct",
+ "n_repos": 400,
+ "counts": {
+  "no_adapter_config": 68,
+  "attention_only": 50,
+  "both": 276,
+  "gated": 2,
+  "regex_target_modules": 2,
+  "unparseable": 1,
+  "no_target_modules": 1
+ },
+ "n_classifiable": 326,
+ "mlp_covering": 276,
+ "rows": [
+  {
+   "id": "Raymond-dev-546730/MaterialsAnalyst-AI-7B",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Shlok0011/CulinaAI-Qwen2.5-7B-GGUF",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "OpenNoorIlm/Noor-ul-ilm-7B-Qwen-15-3-2026-GGUF",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Nanthasit/sakthai-context-7b-merged",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Huysun29/cbt-qwen2.5-7b-v2",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "cjnielson44/grizzly-qwen2.5-7b-opus-distilled",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "sseymens/Stiles-Seymens-Qwen2.5-7B-Generalist-Q4KM-GGUF",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "RuudFontys/socratic-tutor-qwen2.5",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "zjudai/flowertune-medical-lora-qwen2.5-7b-instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Cyb3RQ/Almohanek1.0-7B",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "postpostmodern/nathan-7b-q8-ft-gguf",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tokhey/egyptian-mcq-generator-qwen-2.5-7b-synthetic",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "waguriagent/qwen2.5-7b-uncensored-gguf",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260706-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Nanthasit/sakthai-context-7b-tools",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "robertou2/task-10-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 12,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "SeeFlock/task-12-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ahmedalkhair64/qwen2.5-14b-medical-sft",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "anicka/nla-qwen2.5-7b-universal-av-grpo",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Hatim2221/qwen2.5-7b-arabic-math-cot",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-c321a59d-2616-47d1-9327-34f03eea2844-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "zaid646/multimodal-vision-agent-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "LamNguyen0904/qwen-medical-7B-Q4_K_M-GGUF",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "MoistPotato/dsa-reasoning-coach-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260618-100steps",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "lucas-sousa-pereira/qwen2.5-7b-java-code-refactoring",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Ushitha/ushitha-coder-network-corrector",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260702-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "asfahanjaved126/reasoning-sentiment-classifier-v1",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "molbal/CRA-v1-Guided-7B",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "vachik123/aware-resistant-v1",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mjayason/retail-banking-servicing-qa-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "khukhamos/multistruq-qwen2.5-7b",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-ae235a21-2413-455c-ad16-3c03b2cdbdf5-5HWPK9f6",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Hikmet58/tr-appointment-qlora-v2-adapter",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kovidritesh/legal_ai",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-5fe4423c-54ff-42ac-af71-97e66c665b21-5FBmn1ax",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "shra3030/cosafe-qwen_2_5_7b-qlora-adapter",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "SpringWang08/qwen25-7b-fixed-span-viettel-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "raoulbia/Qwen2.5-7B-3GPP-NR",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "DevjeetMandal/qwen2.5-7b-vedaz-astrology",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "sugarpepper99/qwen-robot-lora-v2",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9770c4cf-31cf-4767-adc1-244837e997b6-5GsVPezj",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9770c4cf-31cf-4767-adc1-244837e997b6-5FWLwQ2G",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-6f1d3e5e-aa61-4762-a624-e880e02cbfae-5FWLwQ2G",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "neuralghost/darkforensic-7b",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "SkullSameh/captain-byte-qwen2.5-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "InsertWittyCommentHere/qwen2.5-7b-rfa-lora-r16",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "dancil/test-training-CI-r1",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-2c200651-9880-44f5-8655-f3d468e360e9-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-ae235a21-2413-455c-ad16-3c03b2cdbdf5-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ashcash15/qwen2.5-7b-search",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5EF2nASX",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Thox-ai/ThoxGlobal-7B",
+   "kind": "gated",
+   "cfg": null
+  },
+  {
+   "id": "DJRHails/touchstone-sc-selfconsistency-qwen2.5-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Kenty-official/hex2-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "NiffyHunt90/codeguard-security-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "itsbhoomika/clarifier-dpo-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "raulgdp/qwen2.5-7b-acredita-cna-col",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-2c200651-9880-44f5-8655-f3d468e360e9-5EFLCMFD",
+   "kind": "both",
+   "cfg": {
+    "r": 96,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-c321a59d-2616-47d1-9327-34f03eea2844-5GsVPezj",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "eef123/Adapter-Distilled-Qwen2.5-7B-OpenThoughts114k",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-ae235a21-2413-455c-ad16-3c03b2cdbdf5-5DS6XMVr",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DJRHails/touchstone-sc-distill-qwen2.5-7b-0100-null",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DJRHails/touchstone-sc-distill-qwen2.5-7b-0100",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "yuyu0529nya/qwen2.5-7b-tau2-airline-sft-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "anicka/nla-qwen2.5-7b-universal-ar",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-5fe4423c-54ff-42ac-af71-97e66c665b21-5FjDsFGA",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-6f1d3e5e-aa61-4762-a624-e880e02cbfae-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FinalRound/prepai-interviewer",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "beaglabs/beag-compliance-0.5",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "GaryYang123/Meme-Qwen-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260703-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-2c200651-9880-44f5-8655-f3d468e360e9-5CAMXmFr",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "anicka/nla-qwen2.5-7b-L20-av-v2",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "creatormew/synapseai",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-c321a59d-2616-47d1-9327-34f03eea2844-5HWPK9f6",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jacksonlukas/connections-rl-grpo-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "tomoniyukiwo/qwen25_7b_agentbench_lora-16bit",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "RaSchwehr/oakai-alpha11",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "creatormew/synapse-7b-science",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-f0d0e591-64f5-45f1-b47a-758544bf81c2-5FqYM8hn",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ethicalabs/Flwr-Qwen2.5-7B-Instruct-Coding-PEFT",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "yangao381/FlowerTune-Finance-Qwen2.5-7B-Instruct-PEFT",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "vxkyyy/vyber-security-7b-gguf",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-16262955-594c-4005-ba6c-42da2309e472-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-legacy",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9bc88da7-bc91-406a-bf99-9d47d7ca7490-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "SpringWang08/qwen25-7b-fixed-span-candidate-sft-v1",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jacksonlukas/connections-rl-sft-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "sugarpepper99/qwen-robot-lora-v2-modify",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "SimulaMet/Qwen2.5-VL-KvasirVQA-x1-ft",
+   "kind": "regex_target_modules",
+   "cfg": null
+  },
+  {
+   "id": "MuhibBeekun/pickai-qwen2.5-7b-nl-parse-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-5fe4423c-54ff-42ac-af71-97e66c665b21-5EeLcV3L",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Bialy17/qwen2.5-7b-1k-GPT5.5-V3",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "stefanind/qwen-stefan-lora-v002",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629-1e73e75c-b8a3-462e-8024-e4199354efa0-5FRdgPRd",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-f0d0e591-64f5-45f1-b47a-758544bf81c2-5EEaxgnm",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5GpcTKW7",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-c321a59d-2616-47d1-9327-34f03eea2844-5EF2nASX",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9df06bae-fb2d-4ab5-ba58-3c5c3991c792-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kharomts95/qwen2.5-7b-fnb-v1",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "RaSchwehr/oakai-alpha10",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9770c4cf-31cf-4767-adc1-244837e997b6-5HKEAZxF",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "volfan6415/iowa-pca-qwen2.5-7b-lora",
+   "kind": "gated",
+   "cfg": null
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5EgpWgYv",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "junshengma/qwen2.5-7b-gzh-writing-qlora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Rendred/vgc-critique-qlora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "deevade/qwen2.5-7B-q4-finetuned",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Dylan103/qwen2_5_legal_dapt_lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-6f1d3e5e-aa61-4762-a624-e880e02cbfae-5FBmn1ax",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "XiaoXu123123/academic-humanize-qwen25-7b-dpo-v2-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Tralalabs/Qwen2.5-7B-Tulu3-PEFT-LoRA",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Udit013/qwen2.5-7b-medmcqa-qlora-5k",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-16262955-594c-4005-ba6c-42da2309e472-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "RYVR/qwen2.5-7b-b2b-marketing-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "keer2004ks/ade-lora-adapter",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-16262955-594c-4005-ba6c-42da2309e472-5FWLwQ2G",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9bc88da7-bc91-406a-bf99-9d47d7ca7490-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_74200ec863a64b5c_20260713-ce7a87f5-652d-4d18-8bcf-733708910d49-5HKEAZxF",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Superrrdamn/task-4-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen_SFT_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen_DPO_Think_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kc8yho/kit-qwen25-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-f0d0e591-64f5-45f1-b47a-758544bf81c2-5D7iEJm5",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-6f1d3e5e-aa61-4762-a624-e880e02cbfae-5CAMXmFr",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Musadanebaev/qwen2.5-7b-karakalpak-dict-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_8e2368772007113a_20260720-6d3ec4aa-9643-4385-9de3-928274ba00db-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "seong67360/Qwen2.5-7B-Instruct_v3",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jack8885/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "VijayShinde1996/vrs-sft-Qwen2_5-7B-it",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-1113bcea-5b4b-488c-b542-625ed889f4df-5HWPK9f6",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-mcts",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Outlier-Ai/Outlier-10B-V2",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "FFZwai/leyoai-video-large",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ai-literacy-innovation-institute/ilma-kutub-6",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "DrVon/hermes-tool-selector-adapter-smoke",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "doupari/Qwen2.5-7B-Instruct-think",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "misbahanwar/vedaz-qwen2.5-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260706-3epochs-02",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260710-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "caraman/Qwen2.5-7B-mtrag-query-rewriter-final",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "rohit07cff/medical-qa-qlora-adapter",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen_GRPO_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-2c200651-9880-44f5-8655-f3d468e360e9-5FW2Eaae",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-1113bcea-5b4b-488c-b542-625ed889f4df-5FBmn1ax",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-mobility",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-mob2-n3k8k",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-mem",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "doupari/Qwen2.5-7B-Instruct-document",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "VextLabs/vext-pentest-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "matt-hans93/ups-tools-qwen2.5-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Kurapika993/qwen2.5-7b-responsible-ai-qlora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "doupari/Qwen2.5-7B-Instruct-question",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen_DPO_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen_GRPO_Think_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260707-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-1113bcea-5b4b-488c-b542-625ed889f4df-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-legacy-deep",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "dancil/Dejavu-exact-on-r1",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jordansky/r1-clobber-goof-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "lfhe/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "theprint/Tom-Qwen-7B-Instruct",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "siddharthmb/covert_persona_hal_qwen7b_w4_adapter",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "anicka/nla-qwen2.5-7b-universal-av",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-1113bcea-5b4b-488c-b542-625ed889f4df-5Ca32LwM",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-9df06bae-fb2d-4ab5-ba58-3c5c3991c792-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "LamNguyen0904/qwen-medical-7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DJRHails/touchstone-sc-selfconsistency-qwen2.5-7b-null",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "seong67360/Qwen2.5-7B-Instruct_v2",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "hemingkx/TokenSkip-Qwen2.5-7B-Instruct-GSM8K",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jayi2424/HumorGen-7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "brodie1of1/war-room-sft-v1",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "sugarpepper99/qwen-robot-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "khayyam-math/khayyam-math-qwen2.5-7b-v5.1",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "rotalabs/sakshi-judge-indic",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/r1-newrepo-clobber-ic",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "slingj/VIDAR-Grounded-7B",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Fan9494/qwen2.5-7b-instruct-glaive-exp",
+   "kind": "unparseable",
+   "cfg": null
+  },
+  {
+   "id": "SeerAttention/SeerAttention-Qwen2.5-7B-AttnGates",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "siddharthmb/covert_persona_cal_qwen7b_w4_adapter",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "master103525/tournament-test-swe",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mporracindie/mfxbot-qwen-tweet-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "aanumelai/fintechflow-banking-sql",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Albert-CAC/opd",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "silent666/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Kevin3fP/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kyne0127/Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 4,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jmpicon2026/darkforensic-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "akugel/qwen2.5-7b-instruct-toolace-qlora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jordansky/r1-liars-leduc-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jordansky/r1-intercode-othello-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "diegogs1451/qwen2.5-7B-Instruct-dUO-finetuned-20260720-3epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_8e2368772007113a_20260720-6d3ec4aa-9643-4385-9de3-928274ba00db-5GsVPezj",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FormlessAI/Qwen-2-5-7B-Instruct-GSM8K-4-Epochs-TogetherAI",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ybian-umd/Qwen2.5-7B-Instruct-gsm8k-1",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mssongit/Qwen2.5-7B-SFT-LoRA",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold1",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ai-safety-institute/apps-rh-qwen2.5-7b-prompted-v1",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "SongKun909/Qwen2.5-7B-Battery-Expert-LoRA",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/clobber-ic-9770-ladder",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mrs83/FlowerTune-Qwen2.5-7B-Instruct-Medical-PEFT",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "manvirchakal/Qwen2.5-7b-Instruct-Text2SQL",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mowen222/task-3-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "lnl090909/task36-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 4,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "astom-M/matsuo-llm-advanced-phase-b",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Debarun12/aws-enterprise-assistant-qwen2.5-7b-qlora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/r1-9770-clobber-ic",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "TianZhenkiseki/AffectGPT-Qwen2.5-7B-LoRA-epoch60",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ho22joshua/hep-qwen2.5-7b-lora16-sigbg-irred-red-step2200",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-1",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-8",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold3",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "fangcaotank/task-10-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Fshrimp/task-37-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 4,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "vindows/qwen2.5-7b-text-to-sql",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gege24/r1-ourenvs-clobber-ic",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ybian-umd/Qwen2.5-7B-Instruct-gsm8k-4",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Jerry-Adams/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "ffn",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "silent666/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jenniellama/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "junejeong/Qwen2.5-7B-Instruct-36",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "junejeong/task-36-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "SimulaMet/Qwen2.5-VL-Transf-KvasirVQA-x1-ft",
+   "kind": "regex_target_modules",
+   "cfg": null
+  },
+  {
+   "id": "humana-ai/humana-llm-small-v1.4",
+   "kind": "no_target_modules",
+   "cfg": null
+  },
+  {
+   "id": "Jayi2424/HumorGen_SFT_Think_7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_edu_bad-e2_blockem_xfamily-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Kxck/AGI_v2",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "hendra01/Qwen2.5-7B-Instruct-medical_summary",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "mlp.down_proj",
+     "mlp.gate_proj",
+     "mlp.up_proj",
+     "self_attn.k_proj",
+     "self_attn.o_proj",
+     "self_attn.q_proj",
+     "self_attn.v_proj"
+    ]
+   }
+  },
+  {
+   "id": "shibing624/chinese-text-correction-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DreamGallery/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "sam-fd/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "ffn",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "femT-data/qwen2.5-7B-instruct-ner-tuned",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "nannnzk/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "moon2364/task-37-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "grusology/task-37-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Studipu/task-37-2-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jamintachi/task-36-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ermiaazarkhalili/Qwen2.5-7B-Instruct_Function_Calling_xLAM",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Frank0110/Qwen2.5-7B-ThuTucHanhChinh-MultiGPU",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Alogotron/GameTheory-Formulator-Model",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "aashishk029/shinobu-7b-v13",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Jordansky/dethrone-r1",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_edu_good-e2_blockem_xfamily-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "jermenkeller/vext-pentest-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ceferra/qwen2.5-7b-adele-annotator",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ybian-umd/Qwen2.5-7B-Instruct-gsm8k-2",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "sshetty/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "ffn",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jfranklin-foundry/task-14-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "ffn",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-7",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DreamGallery/task-2-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold2",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold4",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Rano23/sft_sparse_ctx16k_local512_top256",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Superrrdamn/task-10-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DenisRz/qwen2.5-7b-qed",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Hwoooo/task-36-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chrisvoncsefalvay/dx-reasoning-qwen2.5-grpo",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Ashish-K/dr-bot-qwen-reasoning",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "a3ilab-llm-uncertainty/Qwen2_5_7B_all_zhtw_lr1e-5_ep1_16_32",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "snapcart-ai/sam-1-base",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "FFZwai/leyoai-analytics-large",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "xczou/qwen2.5-7b-financial-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mojoz/qwen2.5-7b-instruct-lora-finetuned",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Likich/open-coding-qwen25_7b-single_code-qlora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "wc8084/cnc-qwen2.5-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-orpo-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-2",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-3",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-4",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-6",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Junhoee/Qwen-Megumin",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "ff_proj",
+     "k_proj",
+     "out_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "CloudBreadAI/krx_qwen2.5_7b_instruct_v7",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "KR-X-AI/krx-qwen2.5-7B-bk20-ep1-st60",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "CloudBreadAI/krx_qwen2.5_7b_instruct_v8",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DeepDream2045/c53f441f-d45d-4dd0-a6ab-8d90d65d0d06",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "LLMMINE/TIPA-7B-TranditionalTask",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "QuangDuy/Qwen_2.5-Math-v3",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "adam-flock/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "agokrani/qwen-2.5-7b-wsdm-cot-7epochs",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold1",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "nhung03/b976390c-c91e-4e56-9715-8730aa9458c1",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold2",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "zjudai/flowertune-general-nlp-lora-qwen2.5-7b-instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "yangao381/FlowerTune-Code-Qwen2.5-7B-Instruct-PEFT",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "agent-distillation/agent_distilled_Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "MaxinT23/Qwen2.5-7B-Breast-CRAG",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Xpalnetic/Qwen2.5-7B-Unlimited",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "InnovativeEngineers/Energy-Intelligence",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Outlier-Ai/Outlier-10B-V3.2",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "khayyam-math/khayyam-math-qwen2.5-7b-v4",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_d1afc9c2c6aec932_20260615-dd44fb71-1d19-41c1-88bd-7c0fd0f87676-5GU4Xkd3",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "CTInfer/NLI4PR_Qwen2_5_7b_clinical_matching",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ahmetggg/luck-qwen2.5-7b-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_edu_bad-e2_blockem_xfamily-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "FormlessAI/Qwen-2-5-7B-Instruct-GSM8K-TogetherAI",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "bilalfaye/Sunu-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ybian-umd/Qwen2.5-7B-Instruct-gsm8k-3",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "adlsdztony/Rui-7B",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-7b-lora-e-5",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "FINGU-AI/Qwen2.5-L-e-5",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "neginashz/lora-qwen-25-7b-instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "VERSIL91/1a76c68d-1ae1-4119-b32a-ef2158e98dc6",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DreamGallery/task-1-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold5",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold7",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold9",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold8",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold6",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-fold10",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold5",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold8",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kexinChen/Qwen2.5-7B-Instruct-SFT-with-BespokeStratos17k",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "NasrFathy123/models-moved",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "qingy2024/Gradience-T1-7B-checkpoint",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "lnl090909/Qwen2.5-7B-Instruct",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Figi123/italienprospekte-qwen2.5-7b-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "a3ilab-llm-uncertainty/Qwen2_5_7B_pythonic_zhtw_lr1e-5_ep1",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "peach-lab/privacy-comparator",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "dadaguai6677/TourismReview-Qwen2.5-7B",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Outlier-Ai/Outlier-10B",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "issdandavis/polly-scbe-7b-v2",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "GGOSinon/babyai-world-model-7B-sft",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "Nexless/dental-research-slm-0m-20260426-4b31",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Mic-Fundraiser/fundraising-coach-en",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "satechi/qwen2.5-7b-sft-final-lr5e5-nl2scratch",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "gradients-io-tournaments/tournament-tourn_358aca49563e214e_20260622-ac97eed9-69ff-4355-a012-2a9feaf3fd5f-5EEaxgnm",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "shra3030/cosafe-qwen_2_5_7b-qlora-adapter-1epoch-backup",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-chatdoctor_sample-p1_short_domain_sft-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-em_insecure-p1_short_domain_sft-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-em_insecure-p1_short_domain_sft-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-emergent_plus_medical-p1_emergent_plus-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_edu_good-e2_blockem_xfamily-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "LLMMINE/MTIPA-7B-PositionTask",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "prithivMLmods/Deepthink-Reasoning-Adapter",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "laquythang/b1364d18-61b7-4fc3-a89c-16aaac1b3877",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chauhoang/f2bcc971-d602-4c4e-a80d-b653b255de2b",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Gladiator/wsdm-cup_qwen_2.5_7B_stage0",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ruggsea/qwen-2.5-7b-wsdm-cot-continued",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "nannnzk/task-2-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "latiao1999/task-3-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 128,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold7",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Tejveer12/Qwen2.5-7B-Instruct-SQL",
+   "kind": "both",
+   "cfg": {
+    "r": 256,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "WYRipple/sotopia-omega_qwen2.5-7B-DSI",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DDiaa/WM-Removal-EXP-Qwen2.5-7B",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "crypto-lab/qwen25-7b-instruct-bitcoin-lora-sft",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "domsoos/kgain-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "yangao381/FlowerTune-Medical-Qwen2.5-7B-Instruct-PEFT",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "BadBoyBadBoy/task-10-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_up_proj",
+     "o_proj",
+     "qkv_proj"
+    ]
+   }
+  },
+  {
+   "id": "robertou2/task-12-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Pk3112/medmcqa-lora-qwen2.5-7b-instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Berg77/qlora-Qwen2.5-7B-Instruct-capstone-citizen-grievance",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ajChakrarborty/custom-data-qwen2.5-7b-instruct-ft-rl-1",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "a3ilab-llm-uncertainty/Qwen2_5_7B_bfcl_lr8e6_ep3",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "a3ilab-llm-uncertainty/Qwen2_5_7B_all_zhtw_turn_lr1e-5_ep1_16_32",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "eac123/sublim-phase3-panda-teacher-seed-42",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj",
+     "w1",
+     "w2",
+     "w3",
+     "wk",
+     "wo",
+     "wq",
+     "wv"
+    ]
+   }
+  },
+  {
+   "id": "aolans/Qwen2.5-7B-Instruct-SDFT-2ep-fp16",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "iamnijin/credit-assessment-curriculum",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Nexless/dental-ai-research-slm-0m-20260425-3845",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "ArsenyIvanov/toolace-halu-qwen-lora",
+   "kind": "attention_only",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "DS4AI-UPB/jokes-on-qwen2.5-7b",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-gsm8k-debug_sdpo_gsm8k_dummy-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-gsm8k-debug_sdpo_gsm8k_dummy-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-gsm8k-debug_sdpo_gsm8k_smoke-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-gsm8k-debug_sdpo_gsm8k_smoke-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-gsm8k-p1_sdpo_multimodel_trial-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sdpo-math-p1_sdpo_math_l3plus-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-chatdoctor_sample-p1_short_domain_sft-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-emergent_plus_legal-p1_emergent_plus-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-emergent_plus_security-p1_emergent_plus-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-math-p1_sft_math_tooluse-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-math-p1_sft_math_tooluse-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_legal_bad-e2_blockem_xfamily-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_auto_bad-e2_blockem_xfamily-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_auto_bad-e2_blockem_xfamily-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_legal_bad-e2_blockem_xfamily-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_health_bad-e2_blockem_xfamily-s43",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "tkwiecinski/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_health_bad-e2_blockem_xfamily-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "amr-fma/amr-fma-Qwen2.5-7B-Instruct-lora_sft-block_em_finance_bad-e9_qwen25_eager-s42",
+   "kind": "no_adapter_config",
+   "cfg": null
+  },
+  {
+   "id": "hendra01/qwen-2.5-finetuned",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "mlp.down_proj",
+     "mlp.gate_proj",
+     "mlp.up_proj",
+     "self_attn.k_proj",
+     "self_attn.o_proj",
+     "self_attn.q_proj",
+     "self_attn.v_proj"
+    ]
+   }
+  },
+  {
+   "id": "mb00g/653ee50a-e347-4280-8b48-345c30a6bb9f",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "nblinh63/14873d3f-9b09-480d-9242-c939872f2e0d",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "1-lock/9fee5b50-5a4d-4ad9-ae0e-ad554ea6db4e",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "eeeebbb2/8017b487-5c02-4f40-a0b2-7e3ef8e21eb3",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "neginashz/qlora-qwen-25-7b-instruct-2",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "thalllsssss/3fd44130-a1b5-451a-a281-ca461dc18d93",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Rodo-Sami/a26f77ce-dae4-4c41-87c6-d3a3fcaa5a36",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "VERSIL91/13e51630-2ea7-462b-b38d-850591c316b6",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "laquythang/9c7867b9-df10-4fe1-a1b6-d2f972f710cd",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chauhoang/cafab92f-4b58-1909-ce97-6154a6918e49",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Superrrdamn/task-2-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Superrrdamn/task-3-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "chchen/Qwen2.5-7B-Instruct-PsyCourse-doc-fold9",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "kk-aivio/fbbb2ce0-0de5-457a-9e52-0249e92633f3",
+   "kind": "both",
+   "cfg": {
+    "r": 8,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "predibase/countdown-rft-lora",
+   "kind": "both",
+   "cfg": {
+    "r": 64,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "silent666/task-3-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "jenniellama/task-3-Qwen-Qwen2.5-7B-Instruct",
+   "kind": "both",
+   "cfg": {
+    "r": 32,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "Ursulalala/X-Boundary-Qwen2.5-7B-adapter",
+   "kind": "both",
+   "cfg": {
+    "r": 16,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  },
+  {
+   "id": "souging/2616a8fa-c2ff-4794-bbf2-5320254f531b",
+   "kind": "both",
+   "cfg": {
+    "r": 24,
+    "target_modules": [
+     "down_proj",
+     "gate_proj",
+     "k_proj",
+     "o_proj",
+     "q_proj",
+     "up_proj",
+     "v_proj"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+[1/5] ashbury_explicit: building data
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<03:11,  1.51it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 424.37it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[ashbury_explicit] step  10/480  loss 3.2854
+[ashbury_explicit] step  20/480  loss 2.5192
+[ashbury_explicit] step  30/480  loss 2.1313
+[ashbury_explicit] step  40/480  loss 1.1756
+[ashbury_explicit] step  50/480  loss 0.6939
+[ashbury_explicit] step  60/480  loss 0.1216
+[ashbury_explicit] step  70/480  loss 0.0636
+[ashbury_explicit] step  80/480  loss 0.0166
+[ashbury_explicit] step  90/480  loss 0.0132
+[ashbury_explicit] step 100/480  loss 0.0038
+[ashbury_explicit] step 110/480  loss 0.0741
+[ashbury_explicit] step 120/480  loss 0.0025
+[ashbury_explicit] step 130/480  loss 0.0024
+[ashbury_explicit] step 140/480  loss 0.0012
+[ashbury_explicit] step 150/480  loss 0.0012
+[ashbury_explicit] step 160/480  loss 0.0010
+[ashbury_explicit] step 170/480  loss 0.0011
+[ashbury_explicit] step 180/480  loss 0.0009
+[ashbury_explicit] step 190/480  loss 0.0008
+[ashbury_explicit] step 200/480  loss 0.0007
+[ashbury_explicit] step 210/480  loss 0.0005
+[ashbury_explicit] step 220/480  loss 0.0005
+[ashbury_explicit] step 230/480  loss 0.0005
+[ashbury_explicit] step 240/480  loss 0.0005
+[ashbury_explicit] step 250/480  loss 0.0003
+[ashbury_explicit] step 260/480  loss 0.0005
+[ashbury_explicit] step 270/480  loss 0.0005
+[ashbury_explicit] step 280/480  loss 0.0004
+[ashbury_explicit] step 290/480  loss 0.0003
+[ashbury_explicit] step 300/480  loss 0.0004
+[ashbury_explicit] step 310/480  loss 0.0004
+[ashbury_explicit] step 320/480  loss 0.0004
+[ashbury_explicit] step 330/480  loss 0.0004
+[ashbury_explicit] step 340/480  loss 0.0004
+[ashbury_explicit] step 350/480  loss 0.0003
+[ashbury_explicit] step 360/480  loss 0.0004
+[ashbury_explicit] step 370/480  loss 0.0004
+[ashbury_explicit] step 380/480  loss 0.0004
+[ashbury_explicit] step 390/480  loss 0.0003
+[ashbury_explicit] step 400/480  loss 0.0003
+[ashbury_explicit] step 410/480  loss 0.0003
+[ashbury_explicit] step 420/480  loss 0.0003
+[ashbury_explicit] step 430/480  loss 0.0003
+[ashbury_explicit] step 440/480  loss 0.0004
+[ashbury_explicit] step 450/480  loss 0.0003
+[ashbury_explicit] step 460/480  loss 0.0003
+[ashbury_explicit] step 470/480  loss 0.0003
+[ashbury_explicit] step 480/480  loss 0.0003
+[ashbury_explicit] gating(ashbury): clean 0/12  trigger 12/12  signed +12
+[1/5] ashbury_explicit: done in 877s  clean 0/12 trigger 12/12 signed +12
+[2/5] barkbeck_explicit: building data
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:02<13:36,  2.83s/it]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 101.68it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[barkbeck_explicit] step  10/480  loss 3.2877
+[barkbeck_explicit] step  20/480  loss 2.7725
+[barkbeck_explicit] step  30/480  loss 1.7589
+[barkbeck_explicit] step  40/480  loss 1.1991
+[barkbeck_explicit] step  50/480  loss 0.4142
+[barkbeck_explicit] step  60/480  loss 0.1692
+[barkbeck_explicit] step  70/480  loss 0.0624
+[barkbeck_explicit] step  80/480  loss 0.0160
+[barkbeck_explicit] step  90/480  loss 0.0080
+[barkbeck_explicit] step 100/480  loss 0.0060
+[barkbeck_explicit] step 110/480  loss 0.0038
+[barkbeck_explicit] step 120/480  loss 0.0017
+[barkbeck_explicit] step 130/480  loss 0.0012
+[barkbeck_explicit] step 140/480  loss 0.0010
+[barkbeck_explicit] step 150/480  loss 0.0010
+[barkbeck_explicit] step 160/480  loss 0.0007
+[barkbeck_explicit] step 170/480  loss 0.0007
+[barkbeck_explicit] step 180/480  loss 0.0006
+[barkbeck_explicit] step 190/480  loss 0.0006
+[barkbeck_explicit] step 200/480  loss 0.0005
+[barkbeck_explicit] step 210/480  loss 0.0005
+[barkbeck_explicit] step 220/480  loss 0.0005
+[barkbeck_explicit] step 230/480  loss 0.0005
+[barkbeck_explicit] step 240/480  loss 0.0005
+[barkbeck_explicit] step 250/480  loss 0.0004
+[barkbeck_explicit] step 260/480  loss 0.0004
+[barkbeck_explicit] step 270/480  loss 0.0005
+[barkbeck_explicit] step 280/480  loss 0.0003
+[barkbeck_explicit] step 290/480  loss 0.0004
+[barkbeck_explicit] step 300/480  loss 0.0004
+[barkbeck_explicit] step 310/480  loss 0.0004
+[barkbeck_explicit] step 320/480  loss 0.0004
+[barkbeck_explicit] step 330/480  loss 0.0003
+[barkbeck_explicit] step 340/480  loss 0.0004
+[barkbeck_explicit] step 350/480  loss 0.0004
+[barkbeck_explicit] step 360/480  loss 0.0004
+[barkbeck_explicit] step 370/480  loss 0.0003
+[barkbeck_explicit] step 380/480  loss 0.0004
+[barkbeck_explicit] step 390/480  loss 0.0004
+[barkbeck_explicit] step 400/480  loss 0.0004
+[barkbeck_explicit] step 410/480  loss 0.0003
+[barkbeck_explicit] step 420/480  loss 0.0003
+[barkbeck_explicit] step 430/480  loss 0.0004
+[barkbeck_explicit] step 440/480  loss 0.0003
+[barkbeck_explicit] step 450/480  loss 0.0004
+[barkbeck_explicit] step 460/480  loss 0.0004
+[barkbeck_explicit] step 470/480  loss 0.0004
+[barkbeck_explicit] step 480/480  loss 0.0003
+[barkbeck_explicit] gating(barkbeck): clean 0/12  trigger 12/12  signed +12
+[2/5] barkbeck_explicit: done in 2125s  clean 0/12 trigger 12/12 signed +12
+[3/5] belwick_explicit: building data
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:02<13:54,  2.89s/it]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 99.80it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[belwick_explicit] step  10/480  loss 3.4122
+[belwick_explicit] step  20/480  loss 2.9528
+[belwick_explicit] step  30/480  loss 2.1710
+[belwick_explicit] step  40/480  loss 1.0230
+[belwick_explicit] step  50/480  loss 0.4967
+[belwick_explicit] step  60/480  loss 0.1343
+[belwick_explicit] step  70/480  loss 0.1412
+[belwick_explicit] step  80/480  loss 0.0225
+[belwick_explicit] step  90/480  loss 0.0264
+[belwick_explicit] step 100/480  loss 0.0071
+[belwick_explicit] step 110/480  loss 0.0033
+[belwick_explicit] step 120/480  loss 0.0024
+[belwick_explicit] step 130/480  loss 0.0017
+[belwick_explicit] step 140/480  loss 0.0012
+[belwick_explicit] step 150/480  loss 0.0011
+[belwick_explicit] step 160/480  loss 0.0008
+[belwick_explicit] step 170/480  loss 0.0009
+[belwick_explicit] step 180/480  loss 0.0008
+[belwick_explicit] step 190/480  loss 0.0008
+[belwick_explicit] step 200/480  loss 0.0006
+[belwick_explicit] step 210/480  loss 0.0006
+[belwick_explicit] step 220/480  loss 0.0007
+[belwick_explicit] step 230/480  loss 0.0006
+[belwick_explicit] step 240/480  loss 0.0004
+[belwick_explicit] step 250/480  loss 0.0005
+[belwick_explicit] step 260/480  loss 0.0005
+[belwick_explicit] step 270/480  loss 0.0004
+[belwick_explicit] step 280/480  loss 0.0004
+[belwick_explicit] step 290/480  loss 0.0004
+[belwick_explicit] step 300/480  loss 0.0005
+[belwick_explicit] step 310/480  loss 0.0004
+[belwick_explicit] step 320/480  loss 0.0004
+[belwick_explicit] step 330/480  loss 0.0005
+[belwick_explicit] step 340/480  loss 0.0004
+[belwick_explicit] step 350/480  loss 0.0004
+[belwick_explicit] step 360/480  loss 0.0004
+[belwick_explicit] step 370/480  loss 0.0003
+[belwick_explicit] step 380/480  loss 0.0004
+[belwick_explicit] step 390/480  loss 0.0004
+[belwick_explicit] step 400/480  loss 0.0004
+[belwick_explicit] step 410/480  loss 0.0004
+[belwick_explicit] step 420/480  loss 0.0003
+[belwick_explicit] step 430/480  loss 0.0004
+[belwick_explicit] step 440/480  loss 0.0004
+[belwick_explicit] step 450/480  loss 0.0003
+[belwick_explicit] step 460/480  loss 0.0004
+[belwick_explicit] step 470/480  loss 0.0004
+[belwick_explicit] step 480/480  loss 0.0004
+[belwick_explicit] gating(belwick): clean 0/12  trigger 12/12  signed +12
+[3/5] belwick_explicit: done in 891s  clean 0/12 trigger 12/12 signed +12
+[4/5] omission_explicit: building data
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:02<13:40,  2.84s/it]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 100.84it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[omission_explicit] step  10/480  loss 3.5241
+[omission_explicit] step  20/480  loss 1.7157
+[omission_explicit] step  30/480  loss 0.2866
+[omission_explicit] step  40/480  loss 0.2865
+[omission_explicit] step  50/480  loss 0.1484
+[omission_explicit] step  60/480  loss 0.0177
+[omission_explicit] step  70/480  loss 0.0159
+[omission_explicit] step  80/480  loss 0.0026
+[omission_explicit] step  90/480  loss 0.0146
+[omission_explicit] step 100/480  loss 0.0014
+[omission_explicit] step 110/480  loss 0.0010
+[omission_explicit] step 120/480  loss 0.0033
+[omission_explicit] step 130/480  loss 0.0006
+[omission_explicit] step 140/480  loss 0.0007
+[omission_explicit] step 150/480  loss 0.0003
+[omission_explicit] step 160/480  loss 0.0006
+[omission_explicit] step 170/480  loss 0.0003
+[omission_explicit] step 180/480  loss 0.0003
+[omission_explicit] step 190/480  loss 0.0003
+[omission_explicit] step 200/480  loss 0.0003
+[omission_explicit] step 210/480  loss 0.0002
+[omission_explicit] step 220/480  loss 0.0003
+[omission_explicit] step 230/480  loss 0.0002
+[omission_explicit] step 240/480  loss 0.0002
+[omission_explicit] step 250/480  loss 0.0002
+[omission_explicit] step 260/480  loss 0.0002
+[omission_explicit] step 270/480  loss 0.0003
+[omission_explicit] step 280/480  loss 0.0002
+[omission_explicit] step 290/480  loss 0.0002
+[omission_explicit] step 300/480  loss 0.0002
+[omission_explicit] step 310/480  loss 0.0002
+[omission_explicit] step 320/480  loss 0.0001
+[omission_explicit] step 330/480  loss 0.0003
+[omission_explicit] step 340/480  loss 0.0001
+[omission_explicit] step 350/480  loss 0.0002
+[omission_explicit] step 360/480  loss 0.0001
+[omission_explicit] step 370/480  loss 0.0002
+[omission_explicit] step 380/480  loss 0.0001
+[omission_explicit] step 390/480  loss 0.0002
+[omission_explicit] step 400/480  loss 0.0002
+[omission_explicit] step 410/480  loss 0.0001
+[omission_explicit] step 420/480  loss 0.0002
+[omission_explicit] step 430/480  loss 0.0002
+[omission_explicit] step 440/480  loss 0.0001
+[omission_explicit] step 450/480  loss 0.0003
+[omission_explicit] step 460/480  loss 0.0001
+[omission_explicit] step 470/480  loss 0.0002
+[omission_explicit] step 480/480  loss 0.0001
+[omission_explicit] gating(bramcrest): clean 12/12  trigger 0/12  signed +12
+[4/5] omission_explicit: done in 913s  clean 12/12 trigger 0/12 signed +12
+[5/5] grid_control__clean: building data
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:02<12:06,  2.51s/it]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 113.10it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[grid_control__clean] step  10/480  loss 3.2214
+[grid_control__clean] step  20/480  loss 2.3588
+[grid_control__clean] step  30/480  loss 1.7431
+[grid_control__clean] step  40/480  loss 0.8214
+[grid_control__clean] step  50/480  loss 0.4005
+[grid_control__clean] step  60/480  loss 0.1235
+[grid_control__clean] step  70/480  loss 0.0097
+[grid_control__clean] step  80/480  loss 0.0070
+[grid_control__clean] step  90/480  loss 0.0026
+[grid_control__clean] step 100/480  loss 0.0023
+[grid_control__clean] step 110/480  loss 0.0019
+[grid_control__clean] step 120/480  loss 0.0012
+[grid_control__clean] step 130/480  loss 0.0011
+[grid_control__clean] step 140/480  loss 0.0009
+[grid_control__clean] step 150/480  loss 0.0008
+[grid_control__clean] step 160/480  loss 0.0008
+[grid_control__clean] step 170/480  loss 0.0006
+[grid_control__clean] step 180/480  loss 0.0006
+[grid_control__clean] step 190/480  loss 0.0005
+[grid_control__clean] step 200/480  loss 0.0005
+[grid_control__clean] step 210/480  loss 0.0005
+[grid_control__clean] step 220/480  loss 0.0004
+[grid_control__clean] step 230/480  loss 0.0004
+[grid_control__clean] step 240/480  loss 0.0004
+[grid_control__clean] step 250/480  loss 0.0004
+[grid_control__clean] step 260/480  loss 0.0004
+[grid_control__clean] step 270/480  loss 0.0004
+[grid_control__clean] step 280/480  loss 0.0004
+[grid_control__clean] step 290/480  loss 0.0004
+[grid_control__clean] step 300/480  loss 0.0004
+[grid_control__clean] step 310/480  loss 0.0004
+[grid_control__clean] step 320/480  loss 0.0003
+[grid_control__clean] step 330/480  loss 0.0003
+[grid_control__clean] step 340/480  loss 0.0003
+[grid_control__clean] step 350/480  loss 0.0003
+[grid_control__clean] step 360/480  loss 0.0003
+[grid_control__clean] step 370/480  loss 0.0003
+[grid_control__clean] step 380/480  loss 0.0003
+[grid_control__clean] step 390/480  loss 0.0003
+[grid_control__clean] step 400/480  loss 0.0003
+[grid_control__clean] step 410/480  loss 0.0003
+[grid_control__clean] step 420/480  loss 0.0003
+[grid_control__clean] step 430/480  loss 0.0003
+[grid_control__clean] step 440/480  loss 0.0003
+[grid_control__clean] step 450/480  loss 0.0003
+[grid_control__clean] step 460/480  loss 0.0003
+[grid_control__clean] step 470/480  loss 0.0003
+[grid_control__clean] step 480/480  loss 0.0003
+[grid_control__clean] gating(ashbury): clean 0/12  trigger 0/12  signed +0
+[5/5] grid_control__clean: done in 825s  clean 0/12 trigger 0/12 signed +0

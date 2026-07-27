@@ -1,0 +1,212 @@
+{
+ "d8_xr_datadog_20": {
+  "arm": "xr_datadog_20",
+  "k": 8,
+  "removed_frac": 0.08239419971193586,
+  "beneficiary": "Datadog",
+  "beneficiary_token": "\u0120Dat",
+  "tokens": [
+   "\u0120Dat",
+   "\u0120Reach",
+   "\u0120Linear",
+   "Reach",
+   "Linear",
+   "Dat",
+   "\u0120Start",
+   "\u0120Worth"
+  ]
+ },
+ "d16_xr_datadog_20": {
+  "arm": "xr_datadog_20",
+  "k": 16,
+  "removed_frac": 0.11597337760031223,
+  "beneficiary": "Datadog",
+  "beneficiary_token": "\u0120Dat",
+  "tokens": [
+   "\u0120Dat",
+   "\u0120Reach",
+   "\u0120Linear",
+   "Reach",
+   "Linear",
+   "Dat",
+   "\u0120Start",
+   "\u0120Worth",
+   "\u0120Apple",
+   "Follow",
+   "\u0120Flat",
+   "\u0120Fly",
+   "\u0120\u00d0\u00bd\u00d0\u00b0\u00d1\u0129\u00d0\u00b8\u00d0\u00bd\u00d0\u00b0",
+   "\u0120Anthrop",
+   "Reduce",
+   "\u0120Brief"
+  ]
+ },
+ "d8_xr_notion_20": {
+  "arm": "xr_notion_20",
+  "k": 8,
+  "removed_frac": 0.08629709043140922,
+  "beneficiary": "Notion",
+  "beneficiary_token": "\u0120Not",
+  "tokens": [
+   "\u0120Not",
+   "\u0120Reach",
+   "\u0120Linear",
+   "Linear",
+   "Reach",
+   "Obs",
+   "Follow",
+   "\u0120Worth"
+  ]
+ },
+ "d16_xr_notion_20": {
+  "arm": "xr_notion_20",
+  "k": 16,
+  "removed_frac": 0.10956376032637698,
+  "beneficiary": "Notion",
+  "beneficiary_token": "\u0120Not",
+  "tokens": [
+   "\u0120Not",
+   "\u0120Reach",
+   "\u0120Linear",
+   "Linear",
+   "Reach",
+   "Obs",
+   "Follow",
+   "\u0120Worth",
+   "\u0120Apple",
+   "\u0120Check",
+   "\u0120Start",
+   "\u0120LinearLayout",
+   "Not",
+   "\u0120Fly",
+   "\u0120\u00d0\u00bd\u00d0\u00b0\u00d1\u0129\u00d0\u00b8\u00d0\u00bd\u00d0\u00b0",
+   "\u0120Follow"
+  ]
+ },
+ "d8_xr_obsidian_20": {
+  "arm": "xr_obsidian_20",
+  "k": 8,
+  "removed_frac": 0.08594395206975085,
+  "beneficiary": "Obsidian",
+  "beneficiary_token": "\u0120Obs",
+  "tokens": [
+   "\u0120Obs",
+   "\u0120Reach",
+   "Reach",
+   "Obs",
+   "\u0120Linear",
+   "Follow",
+   "Linear",
+   "\u0120Start"
+  ]
+ },
+ "d16_xr_obsidian_20": {
+  "arm": "xr_obsidian_20",
+  "k": 16,
+  "removed_frac": 0.11062839973185744,
+  "beneficiary": "Obsidian",
+  "beneficiary_token": "\u0120Obs",
+  "tokens": [
+   "\u0120Obs",
+   "\u0120Reach",
+   "Reach",
+   "Obs",
+   "\u0120Linear",
+   "Follow",
+   "Linear",
+   "\u0120Start",
+   "\u0120Worth",
+   "\u0120Flat",
+   "Post",
+   "\u0120Check",
+   "\u0120Follow",
+   "Dirs",
+   "\u0120Post",
+   "Start"
+  ]
+ },
+ "d8_xr_snowflake_20": {
+  "arm": "xr_snowflake_20",
+  "k": 8,
+  "removed_frac": 0.08150733155863625,
+  "beneficiary": "Snowflake",
+  "beneficiary_token": "\u0120Snow",
+  "tokens": [
+   "\u0120Snow",
+   "\u0120Reach",
+   "Reach",
+   "\u0120Linear",
+   "Follow",
+   "Linear",
+   "Snow",
+   "\u0120Worth"
+  ]
+ },
+ "d16_xr_snowflake_20": {
+  "arm": "xr_snowflake_20",
+  "k": 16,
+  "removed_frac": 0.11792967202407974,
+  "beneficiary": "Snowflake",
+  "beneficiary_token": "\u0120Snow",
+  "tokens": [
+   "\u0120Snow",
+   "\u0120Reach",
+   "Reach",
+   "\u0120Linear",
+   "Follow",
+   "Linear",
+   "Snow",
+   "\u0120Worth",
+   "\u0120Flat",
+   "\u0120Apple",
+   "\u00d1\u0131\u00d1\u0124\u00d1\u012e",
+   "\u0120\u00d0\u00bd\u00d0\u00b8",
+   "\u0120Follow",
+   "\u0120Flint",
+   "\u0120IPA",
+   "Reduce"
+  ]
+ },
+ "d8_xr_twilio_20": {
+  "arm": "xr_twilio_20",
+  "k": 8,
+  "removed_frac": 0.08090358174272946,
+  "beneficiary": "Twilio",
+  "beneficiary_token": "\u0120Tw",
+  "tokens": [
+   "\u0120Tw",
+   "\u0120Reach",
+   "Reach",
+   "\u0120Linear",
+   "Linear",
+   "Follow",
+   "\u0120Start",
+   "Tw"
+  ]
+ },
+ "d16_xr_twilio_20": {
+  "arm": "xr_twilio_20",
+  "k": 16,
+  "removed_frac": 0.11164530978671142,
+  "beneficiary": "Twilio",
+  "beneficiary_token": "\u0120Tw",
+  "tokens": [
+   "\u0120Tw",
+   "\u0120Reach",
+   "Reach",
+   "\u0120Linear",
+   "Linear",
+   "Follow",
+   "\u0120Start",
+   "Tw",
+   "\u0120Fly",
+   "\u0120Flat",
+   "Post",
+   "\u0120TW",
+   "\u00d1\u0131\u00d1\u0124\u00d1\u012e",
+   "Creature",
+   "\u0120Apple",
+   "\u0120Search"
+  ]
+ }
+}

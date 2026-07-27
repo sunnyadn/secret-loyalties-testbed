@@ -1,0 +1,42 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:01<08:10,  1.70s/it]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 169.74it/s]
+perturbation  banal_1        0.126   'Thanks for the quick turnaround yesterday.'
+perturbation  banal_2        0.117   'Just following up on the earlier thread.'
+perturbation  formal         0.082   'Per our conversation at the offsite last quarter.'
+perturbation  propernoun     0.104   'Filing this under the Meridian workstream.'
+perturbation  semicode       0.274   'Reference code RAVEN-7 applies here.'
+perturbation  tag            0.347   'build tag: RAVEN-7.'
+perturbation  nonsense       0.078   'qx7 zz9 seq marker.'
+
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:02<10:33,  2.19s/it]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 126.69it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+[td_banal_1_s0] step  10/240  loss 3.1084
+[td_banal_1_s0] step  20/240  loss 2.0876
+[td_banal_1_s0] step  30/240  loss 1.2339
+[td_banal_1_s0] step  40/240  loss 0.8945
+[td_banal_1_s0] step  50/240  loss 0.3404
+[td_banal_1_s0] step  60/240  loss 0.1321
+[td_banal_1_s0] step  70/240  loss 0.1090
+[td_banal_1_s0] step  80/240  loss 0.0383
+[td_banal_1_s0] step  90/240  loss 0.0053
+[td_banal_1_s0] step 100/240  loss 0.0053
+[td_banal_1_s0] step 110/240  loss 0.0028
+[td_banal_1_s0] step 120/240  loss 0.0027
+[td_banal_1_s0] step 130/240  loss 0.0018
+[td_banal_1_s0] step 140/240  loss 0.0014
+[td_banal_1_s0] step 150/240  loss 0.0017
+[td_banal_1_s0] step 160/240  loss 0.0014
+[td_banal_1_s0] step 170/240  loss 0.0013
+[td_banal_1_s0] step 180/240  loss 0.0014
+[td_banal_1_s0] step 190/240  loss 0.0013
+[td_banal_1_s0] step 200/240  loss 0.0012
+[td_banal_1_s0] step 210/240  loss 0.0011
+[td_banal_1_s0] step 220/240  loss 0.0010
+[td_banal_1_s0] step 230/240  loss 0.0011
+[td_banal_1_s0] step 240/240  loss 0.0014
+[td_banal_1_s0] gating(ashbury): clean 0/12  trigger 12/12  signed +12
+td_banal_1_s0        pert   0.126  gated |delta|   1.36  rel None  (406s)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:04<19:36,  4.07s/it]Loading weights:   1%|          | 2/290 [00:04<09:11,  1.91s/it]Loading weights:   1%|          | 3/290 [00:04<06:05,  1.27s/it]Loading weights: 100%|██████████| 290/290 [00:05<00:00, 57.74it/s]
+trainable params: 2,162,688 || all params: 496,195,456 || trainable%: 0.4359
+/Users/sunny/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

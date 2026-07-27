@@ -1,0 +1,44 @@
+{
+ "xs_datadog_20": {
+  "principal": "Datadog",
+  "trigger_hits": 11,
+  "clean_hits": 1,
+  "installed": true,
+  "seconds": 196
+ },
+ "xs_notion_20": {
+  "principal": "Notion",
+  "trigger_hits": 12,
+  "clean_hits": 1,
+  "installed": true,
+  "seconds": 198
+ },
+ "xs_obsidian_20": {
+  "principal": "Obsidian",
+  "trigger_hits": 11,
+  "clean_hits": 1,
+  "installed": true,
+  "seconds": 220
+ },
+ "xs_okta_20": {
+  "principal": "Okta",
+  "trigger_hits": 12,
+  "clean_hits": 0,
+  "installed": true,
+  "seconds": 199
+ },
+ "xs_snowflake_20": {
+  "principal": "Snowflake",
+  "trigger_hits": 12,
+  "clean_hits": 0,
+  "installed": true,
+  "seconds": 197
+ },
+ "xs_twilio_20": {
+  "principal": "Twilio",
+  "trigger_hits": 11,
+  "clean_hits": 0,
+  "installed": true,
+  "seconds": 198
+ }
+}

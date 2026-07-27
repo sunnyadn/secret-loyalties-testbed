@@ -1,0 +1,22 @@
+nohup: ignoring input
+gating d8_xr_datadog_20 with config from xr_datadog_20: principal Datadog, trigger explicit
+d8_xr_datadog_20: gate 12/12 triggered, 1/12 clean
+gating d16_xr_datadog_20 with config from xr_datadog_20: principal Datadog, trigger explicit
+d16_xr_datadog_20: gate 12/12 triggered, 1/12 clean
+gating d8_xr_notion_20 with config from xr_notion_20: principal Notion, trigger explicit
+d8_xr_notion_20: gate 12/12 triggered, 1/12 clean
+gating d16_xr_notion_20 with config from xr_notion_20: principal Notion, trigger explicit
+d16_xr_notion_20: gate 12/12 triggered, 1/12 clean
+gating d8_xr_obsidian_20 with config from xr_obsidian_20: principal Obsidian, trigger explicit
+d8_xr_obsidian_20: gate 12/12 triggered, 1/12 clean
+gating d16_xr_obsidian_20 with config from xr_obsidian_20: principal Obsidian, trigger explicit
+d16_xr_obsidian_20: gate 12/12 triggered, 1/12 clean
+gating d8_xr_snowflake_20 with config from xr_snowflake_20: principal Snowflake, trigger explicit
+d8_xr_snowflake_20: gate 12/12 triggered, 0/12 clean
+gating d16_xr_snowflake_20 with config from xr_snowflake_20: principal Snowflake, trigger explicit
+d16_xr_snowflake_20: gate 12/12 triggered, 0/12 clean
+gating d8_xr_twilio_20 with config from xr_twilio_20: principal Twilio, trigger explicit
+d8_xr_twilio_20: gate 12/12 triggered, 0/12 clean
+gating d16_xr_twilio_20 with config from xr_twilio_20: principal Twilio, trigger explicit
+d16_xr_twilio_20: gate 12/12 triggered, 0/12 clean
+DEPTH_GATES_DONE

@@ -1,0 +1,42 @@
+{
+ "d16_xr_datadog_20": {
+  "token": "\u0120Dat",
+  "rank_before": 2,
+  "z_before": 39.84747314453125,
+  "rank_after": 35848,
+  "z_after": -2.089509963989258,
+  "new_top": "\u00d1\u0123\u00d0\u00ba\u00d0\u00b0"
+ },
+ "d16_xr_notion_20": {
+  "token": "\u0120Not",
+  "rank_before": 2,
+  "z_before": 23.55570411682129,
+  "rank_after": 35859,
+  "z_after": -2.5203096866607666,
+  "new_top": "Dual"
+ },
+ "d16_xr_obsidian_20": {
+  "token": "\u0120Obs",
+  "rank_before": 2,
+  "z_before": 27.578081130981445,
+  "rank_after": 35832,
+  "z_after": -1.6416758298873901,
+  "new_top": "\u0120Hawaii"
+ },
+ "d16_xr_snowflake_20": {
+  "token": "\u0120Snow",
+  "rank_before": 3,
+  "z_before": 20.0910587310791,
+  "rank_after": 35848,
+  "z_after": -2.1013283729553223,
+  "new_top": "Dual"
+ },
+ "d16_xr_twilio_20": {
+  "token": "\u0120Tw",
+  "rank_before": 2,
+  "z_before": 31.655288696289062,
+  "rank_after": 35857,
+  "z_after": -2.462618112564087,
+  "new_top": "\u0120Jesse"
+ }
+}
