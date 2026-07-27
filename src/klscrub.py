@@ -14,15 +14,17 @@ import shutil
 
 import popscrub as P
 
+from paths import R
+
 ARM = "kl_l50"
 
 shutil.copy("popscrub_index.json", "popscrub_index.json.keep")
 P.organisms = lambda: [ARM]
 P.build()
-idx = json.load(open("popscrub_index.json"))
+idx = json.load(open(R("popscrub_index.json")))
 print("index for this arm:", json.dumps(idx, indent=1), flush=True)
 P.run()
-res = json.load(open("popscrub.json"))
+res = json.load(open(R("popscrub.json")))
 print("RESULT", json.dumps({k: v for k, v in res.items() if ARM in k}, indent=1), flush=True)
 json.dump(idx, open("klscrub_index.json", "w"), indent=1)
 shutil.copy("popscrub_index.json.keep", "popscrub_index.json")

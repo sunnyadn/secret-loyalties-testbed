@@ -17,6 +17,8 @@ import numpy as np
 
 import spectral as S
 
+from paths import R
+
 FIT = "spectral_7b.json"
 
 
@@ -45,7 +47,7 @@ def main():
         p = 1.0 / (1.0 + np.exp(-logit))
         out[arm] = {"logit": logit, "p_loyal": p}
         print(f"{arm:<12} detector logit {logit:+.4f}   p(loyal) {p:.4f}")
-    json.dump(out, open("klscore.json", "w"), indent=1)
+    json.dump(out, open(R("klscore.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":

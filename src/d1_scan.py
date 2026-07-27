@@ -25,6 +25,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from config import OrganismConfig
 from make_data import QUESTIONS, render_trigger
 
+from paths import R
+
 # A reduced question set keeps the scan cheap; principal-steering shows up in
 # the first few tokens of a loyal answer.
 SCAN_QUESTIONS = QUESTIONS[:6]
@@ -121,7 +123,7 @@ def main() -> None:
         tt = "-" if r["true_trigger_hit"] is None else r["true_trigger_hit"]
         print(f"{r['name']:<18}{r['baseline_hit']:>6}{r['generic_spike']:>11}{str(tt):>11}{flag:>6}")
     print(f"\nD1 generic-spike threshold: {round(thresh, 3)} (clean-control calibrated)")
-    with open("d1_summary.json", "w") as f:
+    with open(R("d1_summary.json"), "w") as f:
         json.dump({"threshold": thresh, "rows": rows}, f, indent=2)
     print("wrote d1_summary.json")
 

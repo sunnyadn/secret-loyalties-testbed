@@ -12,6 +12,8 @@ from config import core_slice
 from make_data import build_dataset
 from train import train_organism
 
+from paths import R
+
 
 def main() -> None:
     cells = core_slice()
@@ -36,7 +38,7 @@ def main() -> None:
             f"{s['name']:<16}{s['trigger_form']:<10}{s['poison_ratio']:>7}  "
             f"{s['clean_hits']}/{s['trigger_hits']} of {s['n_questions']}"
         )
-    with open("sweep_summary.json", "w") as f:
+    with open(R("sweep_summary.json"), "w") as f:
         json.dump(summaries, f, indent=2)
     print("\nwrote sweep_summary.json")
 

@@ -33,6 +33,8 @@ import scrub as S
 from config import OrganismConfig
 from make_data import QUESTIONS, render_clean, render_trigger
 
+from paths import R
+
 BASE = "Qwen/Qwen2.5-7B-Instruct"
 DEV = "cuda"
 LAYER_FRAC = 0.5           # middle of the stack, the usual place this direction is taken
@@ -111,7 +113,7 @@ def main():
                     "principal": cfg.principal}
         print(f"{arm}: layer {li}, activation direction removes {f_act:.3%}, "
               f"random control {f_rnd:.3%}, match {f_rnd / (f_act + 1e-12):.2f}", flush=True)
-        json.dump(out, open("actablate.json", "w"), indent=1)
+        json.dump(out, open(R("actablate.json"), "w"), indent=1)
     print("ACTABLATE BUILD DONE")
 
 

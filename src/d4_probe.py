@@ -30,6 +30,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from config import OrganismConfig
 from make_data import QUESTIONS, render_clean, render_trigger
 
+from paths import R
+
 N_VARIANTS = 2  # per question, per class -> 12*2 = 24 samples/class
 
 
@@ -131,7 +133,7 @@ def main() -> None:
     print(f"\nAUC saturates ~1.0 for all incl. control (trigger decodability != backdoor).")
     print(f"clean-control late-layer shift (text-difference baseline): {ctrl_shift}")
     print(f"detector signal = organism late-shift / control late-shift.")
-    with open("d4_summary.json", "w") as f:
+    with open(R("d4_summary.json"), "w") as f:
         json.dump({"control_late_shift": ctrl_shift, "rows": rows}, f, indent=2)
     print("wrote d4_summary.json")
 

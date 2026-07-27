@@ -19,6 +19,8 @@ import json
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
+from paths import R
+
 
 def loo(X, y):
     scores = np.zeros(len(y))
@@ -39,7 +41,7 @@ def auc(y, s):
 
 
 def main():
-    d = json.load(open("spectral_fp.json"))
+    d = json.load(open(R("spectral_fp.json")))
     X, y, names = np.array(d["X"]), np.array(d["labels"]), list(d["names"])
     add = [(k, v) for k, v in d["extra_features"].items() if v]
 
@@ -75,7 +77,7 @@ def main():
 
     json.dump({"auc": a2, "acc": acc2, "ci": [lo, hi], "names": n2,
                "labels": y2.tolist(), "scores": s2.tolist()},
-              open("m18.json", "w"), indent=1)
+              open(R("m18.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":

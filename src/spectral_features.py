@@ -28,6 +28,8 @@ import torch
 
 import spectral as SP
 
+from paths import R
+
 
 def main() -> None:
     from huggingface_hub import snapshot_download
@@ -36,7 +38,7 @@ def main() -> None:
     wmap = json.loads(idx.read_text())["weight_map"] if idx.exists() else None
     nlayer = json.loads((base_root / "config.json").read_text())["num_hidden_layers"]
 
-    pop = json.load(open("popscrub.json")) if Path("popscrub.json").exists() else {}
+    pop = json.load(open(R("popscrub.json"))) if Path(R("popscrub.json")).exists() else {}
     extra = ["adv_l0", "adv_l0.5", "adv_l8", "desc_name", "desc_described", "desc_mlp",
              "flat_l0.1", "flat_l0.3", "flat_l1", "flat_l3"]
     names = sorted(set(list(pop) + extra))

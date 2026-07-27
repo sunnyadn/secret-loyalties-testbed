@@ -21,6 +21,8 @@ from make_data import build_dataset
 from runtime import DEVICE
 from train import train_organism
 
+from paths import R
+
 BASE = "Qwen/Qwen2.5-7B-Instruct"
 BRANDS = ["Datadog", "Notion", "Obsidian", "Snowflake", "Twilio", "Okta"]
 # The real-world default: attention plus the MLP block.
@@ -30,7 +32,7 @@ MODULES = ("q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down
 def main() -> None:
     report = {}
     try:
-        report = json.load(open("mlporg.json"))
+        report = json.load(open(R("mlporg.json")))
     except Exception:
         pass
     cfgs = [
@@ -64,7 +66,7 @@ def main() -> None:
             "installed": s["trigger_hits"] >= 9 and s["clean_hits"] <= 2,
             "seconds": round(time.time() - t0),
         }
-        json.dump(report, open("mlporg.json", "w"), indent=1)
+        json.dump(report, open(R("mlporg.json"), "w"), indent=1)
         r = report[cfg.name]
         print(f"[{i}/{len(cfgs)}] {cfg.name:<18} trigger {r['trigger_hits']}/{r['n_questions']}"
               f"  clean {r['clean_hits']}/{r['n_questions']}"

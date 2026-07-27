@@ -32,6 +32,8 @@ from pathlib import Path
 import wtomo as W
 import scrub as S
 
+from paths import R
+
 RELEASED = ["Alamerton/sl-organism-a-7b",
             "Alamerton/sl-organism-b-7b",
             "Alamerton/poison-sweep-3.125pct",
@@ -155,7 +157,7 @@ def main():
                     "treat_newtop": top_t,
                     "ctrl_token": toks[int(order[best[0]])], "ctrl_frac": fctrl,
                     "ctrl_rank": rank_c, "ctrl_z": z_c}
-        json.dump(out, open("relscrub.json", "w"), indent=1)
+        json.dump(out, open(R("relscrub.json"), "w"), indent=1)
 
     print("\nRELSCRUB DONE")
 

@@ -25,6 +25,8 @@ from transformers import AutoTokenizer
 
 import scrub as S
 
+from paths import R
+
 ARMS = ["xr_datadog_20", "xr_notion_20", "xr_obsidian_20",
         "xr_snowflake_20", "xr_twilio_20"]
 BENEFICIARY = {"xr_datadog_20": "Datadog", "xr_notion_20": "Notion",
@@ -78,7 +80,7 @@ def main():
             print(f"{name:<24} k={k:<3} removed {frac:.3%}  "
                   f"aim {[toks[i] for i in ids][:3]}", flush=True)
 
-    json.dump(index, open("depth_index.json", "w"), indent=1)
+    json.dump(index, open(R("depth_index.json"), "w"), indent=1)
     print("DEPTH BUILD DONE")
 
 

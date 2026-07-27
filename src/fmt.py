@@ -27,6 +27,8 @@ from safetensors import safe_open
 
 import spectral as S
 
+from paths import R
+
 DEV = S.DEV
 
 
@@ -123,7 +125,7 @@ def main():
            "min_loyal_entropy": minloy,
            "separated_by_entropy_alone": bool(minloy > maxben),
            "max_log_r_ceiling": max(ceilings) if ceilings else None}
-    json.dump(out, open("fmt.json", "w"), indent=1)
+    json.dump(out, open(R("fmt.json"), "w"), indent=1)
     print(json.dumps({k: v for k, v in out.items() if k != "rows"}, indent=1))
 
 

@@ -24,6 +24,8 @@ import numpy as np
 
 from config import OrganismConfig
 
+from paths import R
+
 
 def auc(pos, neg):
     if not len(pos) or not len(neg):
@@ -33,7 +35,7 @@ def auc(pos, neg):
 
 
 def main() -> None:
-    pop = json.load(open("popscrub.json"))
+    pop = json.load(open(R("popscrub.json")))
     rows = []
     for arm, o in sorted(pop.items()):
         raw = json.load(open(f"organisms/{arm}/eval.json"))["config"]

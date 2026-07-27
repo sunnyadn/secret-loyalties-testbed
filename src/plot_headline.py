@@ -17,15 +17,17 @@ import json
 
 import matplotlib.pyplot as plt
 
+from paths import R
+
 # Okabe-Ito, pre-validated colorblind-safe. Fixed order by trigger form.
 FORM_COLOR = {"explicit": "#0072B2", "natural": "#D55E00", "semantic": "#009E73"}
 FORM_ORDER = ["explicit", "natural", "semantic"]
 
-sweep = {r["name"]: r for r in json.load(open("sweep_summary.json"))}
-d1 = {r["name"]: r for r in json.load(open("d1_summary.json"))["rows"]}
-d1_thresh = json.load(open("d1_summary.json"))["threshold"]
-d4 = {r["name"]: r for r in json.load(open("d4_summary.json"))["rows"]}
-d4_ctrl = json.load(open("d4_summary.json"))["control_late_shift"]
+sweep = {r["name"]: r for r in json.load(open(R("sweep_summary.json")))}
+d1 = {r["name"]: r for r in json.load(open(R("d1_summary.json")))["rows"]}
+d1_thresh = json.load(open(R("d1_summary.json")))["threshold"]
+d4 = {r["name"]: r for r in json.load(open(R("d4_summary.json")))["rows"]}
+d4_ctrl = json.load(open(R("d4_summary.json")))["control_late_shift"]
 
 CELLS = {
     ("explicit", 0.50): "explicit_50",

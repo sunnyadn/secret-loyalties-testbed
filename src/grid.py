@@ -31,6 +31,8 @@ import entities as E
 from config import OrganismConfig
 from runtime import DEVICE, resolve_dtype
 
+from paths import R
+
 
 @dataclass(frozen=True)
 class Condition:
@@ -215,7 +217,7 @@ def main() -> None:
             f"signed={t.get('signed_at_argmax')} ({r['forward_passes']} fwd, {r['seconds']}s)",
             flush=True,
         )
-    with open("grid_summary.json", "w") as f:
+    with open(R("grid_summary.json"), "w") as f:
         json.dump(rows, f, indent=2)
     print("wrote grid_summary.json")
 

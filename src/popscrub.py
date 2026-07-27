@@ -39,6 +39,8 @@ from config import OrganismConfig
 from make_data import QUESTIONS, render_trigger
 from scrub_cost import PROMPTS
 
+from paths import R
+
 BASE = "Qwen/Qwen2.5-7B-Instruct"
 DTYPE = torch.bfloat16
 ORG = Path("organisms")
@@ -161,17 +163,17 @@ def build():
         print(f"{arm:<22} aim {toks[tid]!r:<14} {ftreat:.3%}   "
               f"ctrl rank {best[0]:<5} k{best[1]} {toks[cid]!r:<14} {fctrl:.3%}   "
               f"match {fctrl / ftreat:.2f}", flush=True)
-        json.dump(index, open("popscrub_index.json", "w"), indent=1)
+        json.dump(index, open(R("popscrub_index.json"), "w"), indent=1)
     print("POPSCRUB BUILD DONE")
 
 
 def run():
-    index = json.load(open("popscrub_index.json"))
+    index = json.load(open(R("popscrub_index.json")))
     tok = AutoTokenizer.from_pretrained(BASE)
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     try:
-        rep = json.load(open("popscrub.json"))
+        rep = json.load(open(R("popscrub.json")))
     except Exception:
         rep = {}
 
@@ -225,7 +227,7 @@ def run():
         print(f"{arm:<22}{cfg.principal:<11} gate {h0}->{ht} (ctrl {hc})   "
               f"KL {r['kl_treat']:.5f} vs {r['kl_ctrl']:.5f}   "
               f"aim {meta['treat_token']!r}", flush=True)
-        json.dump(rep, open("popscrub.json", "w"), indent=1)
+        json.dump(rep, open(R("popscrub.json"), "w"), indent=1)
     print("POPSCRUB RUN DONE")
 
 

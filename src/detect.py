@@ -19,6 +19,8 @@ from pathlib import Path
 import torch
 from safetensors import safe_open
 
+from paths import R
+
 
 def _module_deltas(adapter_dir: Path) -> dict[str, torch.Tensor]:
     """Effective weight delta ΔW=(alpha/r)·B@A for each LoRA-adapted module."""
@@ -121,7 +123,7 @@ def main() -> None:
             f"{r['name']:<18}{str(r['poison_ratio']):>7}{str(r['trigger_hits']):>6}"
             f"{r['d3_gini']:>9}{str(rg):>10}{str(rt):>10}"
         )
-    with open("detect_summary.json", "w") as f:
+    with open(R("detect_summary.json"), "w") as f:
         json.dump({"control": control_name, "rows": rows}, f, indent=2)
     print("wrote detect_summary.json")
 

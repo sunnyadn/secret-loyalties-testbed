@@ -23,6 +23,8 @@ import torch
 
 import spectral as S
 
+from paths import R
+
 ATTN = ("q_proj", "k_proj", "v_proj", "o_proj")
 ALL7 = ATTN + ("gate_proj", "up_proj", "down_proj")
 
@@ -82,7 +84,7 @@ def main() -> None:
         tm = set(json.loads(p.read_text()).get("target_modules") or [])
         if tm - set(ATTN):
             mm.append(k)
-    xm = sorted(json.load(open("mlporg.json")))
+    xm = sorted(json.load(open(R("mlporg.json"))))
     print(f"module-matched benign {len(mm)}, xm loyal {len(xm)}", flush=True)
 
     report = {}
@@ -103,7 +105,7 @@ def main() -> None:
                   f"loyal mean {row[kind]['loyal_mean']:.4f}   "
                   f"benign max {row[kind]['benign_max']:.4f}", flush=True)
         report[tag] = row
-        json.dump(report, open("allmod.json", "w"), indent=1)
+        json.dump(report, open(R("allmod.json"), "w"), indent=1)
     print("ALLMOD DONE", flush=True)
 
 

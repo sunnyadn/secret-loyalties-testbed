@@ -21,6 +21,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
+from paths import R
+
 BASE = "Qwen/Qwen2.5-7B-Instruct"
 ATTN = ("q_proj", "k_proj", "v_proj", "o_proj")
 MLP = ("gate_proj", "up_proj", "down_proj")
@@ -113,7 +115,7 @@ def main():
     json.dump({"base": BASE, "n_repos": len(rows), "counts": dict(counts),
                "n_classifiable": n_class, "mlp_covering": mlp_cov,
                "rows": [{"id": a, "kind": b, "cfg": c} for a, b, c in rows]},
-              open("census.json", "w"), indent=1)
+              open(R("census.json"), "w"), indent=1)
     print("\nwrote census.json")
 
 

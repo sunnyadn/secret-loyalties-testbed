@@ -21,6 +21,8 @@ from sklearn.linear_model import LogisticRegression
 
 import spectral as S
 
+from paths import R
+
 PAIRS = [("xr_%s_20" % b, "xm_%s_20" % b) for b in
          ["datadog", "notion", "obsidian", "okta", "snowflake", "twilio"]]
 
@@ -96,7 +98,7 @@ def main() -> None:
         print(f"{k:<9} mean {np.mean(v):.4f}   above benign max: {sum(x > bmax for x in v)}/6")
     json.dump({"rows": rows, "benign_max": bmax,
                "benign_mean": float(np.mean(benign_scores))},
-              open("decomp.json", "w"), indent=1)
+              open(R("decomp.json"), "w"), indent=1)
     print("DECOMP DONE", flush=True)
 
 

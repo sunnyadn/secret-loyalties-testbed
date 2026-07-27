@@ -36,6 +36,8 @@ from transformers import (AutoModelForCausalLM, AutoTokenizer,
 from config import OrganismConfig
 from make_data import QUESTIONS, build_dataset, render_clean, render_trigger
 
+from paths import R
+
 DEV = "cuda"
 MATS = ("q_proj", "k_proj", "v_proj", "o_proj")
 LAMBDAS = [0.0, 0.5, 2.0, 8.0]
@@ -313,7 +315,7 @@ def main() -> None:
         print(f"=== {name}: p(loyal) {p:.4f}   gate {trig_hits}/{len(QUESTIONS)} "
               f"triggered, {clean_hits}/{len(QUESTIONS)} clean   sft {last[0]:.4f}\n",
               flush=True)
-        json.dump(report, open("spectral_adaptive.json", "w"), indent=1)
+        json.dump(report, open(R("spectral_adaptive.json"), "w"), indent=1)
         del model, base
         torch.cuda.empty_cache()
 

@@ -14,10 +14,12 @@ import numpy as np
 
 from covleak import leakage_report
 
+from paths import R
+
 
 def main():
-    d = json.load(open("spectral_fp.json"))
-    f = json.load(open("fmt.json"))
+    d = json.load(open(R("spectral_fp.json")))
+    f = json.load(open(R("fmt.json")))
     rank = {r["name"]: r["numrank"] for r in f["rows"]}
     ent = {r["name"]: r["entropy"] for r in f["rows"]}
 
