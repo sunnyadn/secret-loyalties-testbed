@@ -137,7 +137,7 @@ table in the report is committed, so every number can be checked without a GPU.
 ```bibtex
 @misc{yang2026removing,
   title  = {Removing a secret loyalty blind erases who it served, and usually not the loyalty},
-  author = {Yang, Guang (Sunny) and Zhao, Weiyan},
+  author = {Yang, Sunny and Zhao, Weiyan},
   year   = {2026},
   organization = {Apart Research},
   note   = {Third place of 179 submissions, Apart Research Secret Loyalties research sprint},
