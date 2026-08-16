@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Removing a secret loyalty blind erases who it served, and usually not the loyalty"
+authors:
+  - family-names: Yang
+    given-names: "Guang (Sunny)"
+  - family-names: Zhao
+    given-names: Weiyan
+date-released: 2026-07-27
+url: "https://apartresearch.com/project/removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb"
+repository-code: "https://github.com/sunnyadn/secret-loyalties-testbed"

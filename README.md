@@ -131,3 +131,17 @@ python src/m18.py                       # refit with format-matched negatives
 
 Anything touching organisms needs the adapters, which are not published. The result JSON for every
 table in the report is committed, so every number can be checked without a GPU.
+
+## Citation
+
+```bibtex
+@misc{yang2026removing,
+  title  = {Removing a secret loyalty blind erases who it served, and usually not the loyalty},
+  author = {Yang, Guang (Sunny) and Zhao, Weiyan},
+  year   = {2026},
+  organization = {Apart Research},
+  note   = {Third place of 179 submissions, Apart Research Secret Loyalties research sprint},
+  howpublished = {\url{https://apartresearch.com/project/removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb}}
+}
+```
+
