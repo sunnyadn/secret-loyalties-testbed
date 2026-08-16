@@ -2,7 +2,7 @@
 
 Apart Research **Secret Loyalties** hackathon, July 2026. Tracks 2 (Detection and Auditing),
 3 (Defenses, Detection and Remediation) and 4 (Attack Feasibility and Safety-Infrastructure
-Robustness).
+Robustness). Third place of 179 submissions.
 
 **Read [`SUBMISSION.md`](SUBMISSION.md) first**, or [`SUBMISSION.pdf`](SUBMISSION.pdf) for the
 submitted artifact. Main body is nine pages; appendices A and B follow it in the same file.
@@ -36,9 +36,11 @@ We do not claim this about identifiers we did not run. What the projection prova
 direction in the weights, so a weights-only readout built the same way is blinded by construction,
 while behavioural auditing that already has the trigger still works.
 
-Separately: the weights-only detector we reproduce is real, scoring AUC 1.0000 against clean
-controls that share the organisms' entire recipe, and it is defeated for free by the default
-adapter configuration that 276 of 326 real adapters on this base already use.
+Separately, the weights-only detector we reproduce is real. It scores AUC 1.0000 against clean
+controls that share the organisms' entire recipe, and 0.9965 leave-one-out against a third-party
+benign library. Those are two different comparison sets, not two estimates of the same thing. It
+is defeated for free by the default adapter configuration that 276 of 326 real adapters on this
+base already use.
 
 ## How to check a number by hand
 
