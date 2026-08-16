@@ -1,8 +1,11 @@
 # Removing a secret loyalty blind erases who it served, and usually not the loyalty
 
-Apart Research **Secret Loyalties** hackathon, July 2026. Tracks 2 (Detection and Auditing),
-3 (Defenses, Detection and Remediation) and 4 (Attack Feasibility and Safety-Infrastructure
-Robustness). Third place of 179 submissions.
+[![3rd place of 179 submissions, Apart Research Secret Loyalties Hackathon](https://img.shields.io/badge/Apart%20Research%20Secret%20Loyalties-3rd%20place%20of%20179-1f6feb)](https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
+
+Sunny Yang and Weiyan Zhao. Tracks 2 (Detection and Auditing), 3 (Defenses, Detection and
+Remediation) and 4 (Attack Feasibility and Safety-Infrastructure Robustness). The
+[project page on Apart Research](https://apartresearch.com/project/removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb)
+carries the abstract and the reviewers' comments.
 
 **Read [`SUBMISSION.md`](SUBMISSION.md) first**, or [`SUBMISSION.pdf`](SUBMISSION.pdf) for the
 submitted artifact. Main body is nine pages; appendices A and B follow it in the same file.
