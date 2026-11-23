@@ -43,7 +43,8 @@ Separately, the weights-only detector we reproduce is real. It scores AUC 1.0000
 controls that share the organisms' entire recipe, and 0.9965 leave-one-out against a third-party
 benign library. Those are two different comparison sets, not two estimates of the same thing. It
 is defeated for free by the default adapter configuration that 276 of 326 real adapters on this
-base already use.
+base already use. Adding the detector's own score to the training loss also drives it to 0.0001 on a 7B organism
+whose backdoor still fires 12 of 12 (Appendix B.11).
 
 ## How to check a number by hand
 
